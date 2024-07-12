@@ -1,0 +1,60 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+	</tr>
+</table>
+@if (_3da77447_bcbc_40ec_9519_328447f2357b_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3da77447_bcbc_40ec_9519_328447f2357b_buttonVisibilityTest = !_3da77447_bcbc_40ec_9519_328447f2357b_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_630fc374_409c_41af_946a_f591548068c0_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _630fc374_409c_41af_946a_f591548068c0_buttonVisibilityTest = !_630fc374_409c_41af_946a_f591548068c0_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _3da77447_bcbc_40ec_9519_328447f2357b_buttonVisibilityTest;
+	private bool _630fc374_409c_41af_946a_f591548068c0_buttonVisibilityTest;
+
+} 

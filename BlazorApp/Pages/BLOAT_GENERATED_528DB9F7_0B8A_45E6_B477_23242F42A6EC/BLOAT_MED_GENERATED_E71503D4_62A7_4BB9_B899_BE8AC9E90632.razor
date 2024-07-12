@@ -1,0 +1,52 @@
+@using Telerik.Blazor.Components;
+@if (_cf097817_cf05_4c0c_959c_31c4164c980c_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _cf097817_cf05_4c0c_959c_31c4164c980c_buttonVisibilityTest = !_cf097817_cf05_4c0c_959c_31c4164c980c_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_d58916a7_bf1f_42e5_bdd7_de0e819d5274_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_70e2c96a_426b_4629_a6f4_9cad9a60c4d5_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _70e2c96a_426b_4629_a6f4_9cad9a60c4d5_buttonVisibilityTest = !_70e2c96a_426b_4629_a6f4_9cad9a60c4d5_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_88f03359_bfe3_4e26_8248_a12bf6474d8b_Text())
+</a>
+@if (_6e315eb5_2ef7_414b_b97e_9078ecf41792_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _6e315eb5_2ef7_414b_b97e_9078ecf41792_buttonVisibilityTest = !_6e315eb5_2ef7_414b_b97e_9078ecf41792_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_35234e5d_0c0a_416b_a54b_f5b0022bd6c8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _35234e5d_0c0a_416b_a54b_f5b0022bd6c8_buttonVisibilityTest = !_35234e5d_0c0a_416b_a54b_f5b0022bd6c8_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_b7917fff_11e0_4a91_9a74_9a930fe515ee_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _cf097817_cf05_4c0c_959c_31c4164c980c_buttonVisibilityTest;
+	private bool _70e2c96a_426b_4629_a6f4_9cad9a60c4d5_buttonVisibilityTest;
+	private bool _6e315eb5_2ef7_414b_b97e_9078ecf41792_buttonVisibilityTest;
+	private bool _35234e5d_0c0a_416b_a54b_f5b0022bd6c8_buttonVisibilityTest;
+	private string Get_d58916a7_bf1f_42e5_bdd7_de0e819d5274_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_88f03359_bfe3_4e26_8248_a12bf6474d8b_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_b7917fff_11e0_4a91_9a74_9a930fe515ee_Class()
+	{
+		return "alert alert-info";
+	}
+} 

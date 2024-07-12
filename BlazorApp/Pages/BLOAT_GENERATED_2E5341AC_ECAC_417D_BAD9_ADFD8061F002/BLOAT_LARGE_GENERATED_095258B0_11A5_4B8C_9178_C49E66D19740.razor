@@ -1,0 +1,108 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_3cc1cc98_ac9a_431b_b126_01337e61bf4e_Class())">
+	@if (_c1f893ed_41db_4312_a419_1366715a235f_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _c1f893ed_41db_4312_a419_1366715a235f_buttonVisibilityTest = !_c1f893ed_41db_4312_a419_1366715a235f_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _fcd69346_b007_48bc_a21c_37c8a4df89d9_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _fcd69346_b007_48bc_a21c_37c8a4df89d9_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _fcd69346_b007_48bc_a21c_37c8a4df89d9_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		<a href="#">
+			@(GetAnchor_3e699471_03f4_40a3_a91f_1ad837b5fe50_Text())
+		</a>
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_7ccef75c_d281_463b_85b9_87c82341d21c_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_a23e1a54_df19_4174_8ac5_00cf40482771_Text())
+</a>
+<div class="@(Get_70c8662f_bc6f_4b54_9913_f3fd68aeca96_Class())">
+	@if (_c5398938_53d0_4677_bf91_ae728d9da7d5_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _c5398938_53d0_4677_bf91_ae728d9da7d5_buttonVisibilityTest = !_c5398938_53d0_4677_bf91_ae728d9da7d5_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</div>
+<div class="@(Get_77ee1ff0_42c4_4fce_ad2e_4ca3f19951ca_Class())">
+	@if (_751ba52d_4d0f_489a_ba80_d6f2ab23fe46_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _751ba52d_4d0f_489a_ba80_d6f2ab23fe46_buttonVisibilityTest = !_751ba52d_4d0f_489a_ba80_d6f2ab23fe46_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</div>
+@if (_816f2518_4e0c_430a_b1f1_10bdaa0e0e15_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _816f2518_4e0c_430a_b1f1_10bdaa0e0e15_buttonVisibilityTest = !_816f2518_4e0c_430a_b1f1_10bdaa0e0e15_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_5a8938ad_46cb_415c_ae98_c00ff107808c_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5a8938ad_46cb_415c_ae98_c00ff107808c_buttonVisibilityTest = !_5a8938ad_46cb_415c_ae98_c00ff107808c_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _c1f893ed_41db_4312_a419_1366715a235f_buttonVisibilityTest;
+	private bool _c5398938_53d0_4677_bf91_ae728d9da7d5_buttonVisibilityTest;
+	private bool _751ba52d_4d0f_489a_ba80_d6f2ab23fe46_buttonVisibilityTest;
+	private bool _816f2518_4e0c_430a_b1f1_10bdaa0e0e15_buttonVisibilityTest;
+	private bool _5a8938ad_46cb_415c_ae98_c00ff107808c_buttonVisibilityTest;
+	private string Get_3cc1cc98_ac9a_431b_b126_01337e61bf4e_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_3e699471_03f4_40a3_a91f_1ad837b5fe50_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _fcd69346_b007_48bc_a21c_37c8a4df89d9_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _7ccef75c_d281_463b_85b9_87c82341d21c_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_a23e1a54_df19_4174_8ac5_00cf40482771_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_70c8662f_bc6f_4b54_9913_f3fd68aeca96_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_77ee1ff0_42c4_4fce_ad2e_4ca3f19951ca_Class()
+	{
+		return "alert alert-info";
+	}
+} 

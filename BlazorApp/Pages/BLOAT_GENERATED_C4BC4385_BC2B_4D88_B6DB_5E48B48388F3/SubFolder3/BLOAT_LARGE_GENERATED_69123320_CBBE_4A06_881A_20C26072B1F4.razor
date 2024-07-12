@@ -1,0 +1,91 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_c83bb425_d5b4_4c2c_a2ca_4cb17a87a77b_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _86859efe_27d4_4569_b2de_86dd15079cd7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _86859efe_27d4_4569_b2de_86dd15079cd7_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _86859efe_27d4_4569_b2de_86dd15079cd7_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_4617ea7d_5a1f_4c19_89b3_3dbebdba00f1_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private void _c83bb425_d5b4_4c2c_a2ca_4cb17a87a77b_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _86859efe_27d4_4569_b2de_86dd15079cd7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _4617ea7d_5a1f_4c19_89b3_3dbebdba00f1_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

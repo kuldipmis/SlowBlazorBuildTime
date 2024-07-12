@@ -1,0 +1,134 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_143f5877_f4c6_4318_a243_3347bb44cb72_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _4df25162_8584_4dca_8816_ececb1fa54f4_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="@(Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+	</tr>
+</table>
+@if (_de1995cc_1b93_4064_97af_6618260f17e8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _de1995cc_1b93_4064_97af_6618260f17e8_buttonVisibilityTest = !_de1995cc_1b93_4064_97af_6618260f17e8_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _de1995cc_1b93_4064_97af_6618260f17e8_buttonVisibilityTest;
+	private string GetAnchor_143f5877_f4c6_4318_a243_3347bb44cb72_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _4df25162_8584_4dca_8816_ececb1fa54f4_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_c31fefbf_35a9_424a_a25e_d6b77f814c4a_Class()
+	{
+		return "alert alert-info";
+	}
+} 

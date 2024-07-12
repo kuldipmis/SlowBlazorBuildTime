@@ -1,0 +1,144 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_bbeb5d37_5945_4601_977a_25244bf5f04b_Text())
+</a>
+<div class="@(Get_04d23c57_dd19_4452_b4c4_7fb3359d65ef_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_c95dbfbe_4e06_4ec2_b163_03992bad70a8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _c95dbfbe_4e06_4ec2_b163_03992bad70a8_buttonVisibilityTest = !_c95dbfbe_4e06_4ec2_b163_03992bad70a8_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_419a7402_1634_4b92_a3e7_ad6a44bcf31c_Text())
+</a>
+<div class="@(Get_bc3ef51e_84a2_4de6_8af0_1b2d1ccdfbba_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_46da3bd5_ff48_4942_aac8_a5a24749afc4_Text())
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+			<th>
+				Test Header 3
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+			<td>
+				Col3Row1
+			</td>
+			<td>
+				Col1Row2
+			</td>
+			<td>
+				Col2Row2
+			</td>
+			<td>
+				Col3Row2
+			</td>
+			<td>
+				Col1Row3
+			</td>
+			<td>
+				Col2Row3
+			</td>
+			<td>
+				Col3Row3
+			</td>
+			<td>
+				Col1Row4
+			</td>
+			<td>
+				Col2Row4
+			</td>
+			<td>
+				Col3Row4
+			</td>
+			<td>
+				Col1Row5
+			</td>
+			<td>
+				Col2Row5
+			</td>
+			<td>
+				Col3Row5
+			</td>
+		</tr>
+	</table>
+</a>
+@code { 
+	private bool _c95dbfbe_4e06_4ec2_b163_03992bad70a8_buttonVisibilityTest;
+	private string GetAnchor_bbeb5d37_5945_4601_977a_25244bf5f04b_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_04d23c57_dd19_4452_b4c4_7fb3359d65ef_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_419a7402_1634_4b92_a3e7_ad6a44bcf31c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_bc3ef51e_84a2_4de6_8af0_1b2d1ccdfbba_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_46da3bd5_ff48_4942_aac8_a5a24749afc4_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

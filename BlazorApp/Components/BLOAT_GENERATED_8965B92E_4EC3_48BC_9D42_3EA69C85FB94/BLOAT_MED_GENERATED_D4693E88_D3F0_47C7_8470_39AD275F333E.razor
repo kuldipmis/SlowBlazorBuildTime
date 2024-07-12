@@ -1,0 +1,87 @@
+@using Telerik.Blazor.Components;
+@if (_d98b6cec_25f1_48d5_b33f_260d1c7782dd_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _d98b6cec_25f1_48d5_b33f_260d1c7782dd_buttonVisibilityTest = !_d98b6cec_25f1_48d5_b33f_260d1c7782dd_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f562ba42_ab1d_4d6c_a4cf_193d2e9d5ac8_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _f562ba42_ab1d_4d6c_a4cf_193d2e9d5ac8_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _f562ba42_ab1d_4d6c_a4cf_193d2e9d5ac8_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _f562ba42_ab1d_4d6c_a4cf_193d2e9d5ac8_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<a href="#">
+				@(GetAnchor_5d94a6fd_b5fe_4dd6_be36_32a58d94c3a3_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_5d94a6fd_b5fe_4dd6_be36_32a58d94c3a3_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_5d94a6fd_b5fe_4dd6_be36_32a58d94c3a3_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_5d94a6fd_b5fe_4dd6_be36_32a58d94c3a3_Text())
+			</a>
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f574d4f3_fc72_49e8_8679_db8f0947ca49_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _d98b6cec_25f1_48d5_b33f_260d1c7782dd_buttonVisibilityTest;
+	private string _f562ba42_ab1d_4d6c_a4cf_193d2e9d5ac8_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_5d94a6fd_b5fe_4dd6_be36_32a58d94c3a3_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _f574d4f3_fc72_49e8_8679_db8f0947ca49_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,105 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_bd0543c3_7db5_40f9_aa04_06af72f78f3a_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			@if (_8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest) 
+			{
+				<TelerikButton OnClick="() => _8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest = !_8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest"> 
+					This is a test button! 
+				</TelerikButton> 
+			}
+		</td>
+		<td>
+			@if (_8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest) 
+			{
+				<TelerikButton OnClick="() => _8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest = !_8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest"> 
+					This is a test button! 
+				</TelerikButton> 
+			}
+		</td>
+	</tr>
+</table>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_5570382f_ea7b_42ed_8360_cb316ea6dabf_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _8cacaa45_c919_43d9_8699_77ed17685e18_buttonVisibilityTest;
+	private string Get_bd0543c3_7db5_40f9_aa04_06af72f78f3a_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _5570382f_ea7b_42ed_8360_cb316ea6dabf_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

@@ -1,0 +1,89 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+	</tr>
+</table>
+@if (_1e977f4a_0658_4bd9_8a72_cc634268a3d1_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1e977f4a_0658_4bd9_8a72_cc634268a3d1_buttonVisibilityTest = !_1e977f4a_0658_4bd9_8a72_cc634268a3d1_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_17cd97e3_265d_4346_839a_d98c8f818044_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _1e977f4a_0658_4bd9_8a72_cc634268a3d1_buttonVisibilityTest;
+	private string Get_17cd97e3_265d_4346_839a_d98c8f818044_Class()
+	{
+		return "alert alert-info";
+	}
+} 

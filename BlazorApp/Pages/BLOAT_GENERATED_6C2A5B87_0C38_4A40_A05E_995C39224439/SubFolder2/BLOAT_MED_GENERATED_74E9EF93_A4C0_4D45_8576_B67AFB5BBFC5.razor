@@ -1,0 +1,65 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_8b07cb23_a83d_4839_aafc_0dd308e66108_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _09f1f098_df3c_4bc6_9f45_cf920c1712a8_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_132d2637_a637_4e82_9a84_0e5f66c88417_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _8d720cf9_472c_4432_be0d_7e6d398b670a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _8d720cf9_472c_4432_be0d_7e6d398b670a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _8d720cf9_472c_4432_be0d_7e6d398b670a_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _8d720cf9_472c_4432_be0d_7e6d398b670a_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string GetAnchor_8b07cb23_a83d_4839_aafc_0dd308e66108_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _09f1f098_df3c_4bc6_9f45_cf920c1712a8_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _132d2637_a637_4e82_9a84_0e5f66c88417_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_f883e5a5_57c2_4c89_a3b4_1d186614d7bf_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _8d720cf9_472c_4432_be0d_7e6d398b670a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

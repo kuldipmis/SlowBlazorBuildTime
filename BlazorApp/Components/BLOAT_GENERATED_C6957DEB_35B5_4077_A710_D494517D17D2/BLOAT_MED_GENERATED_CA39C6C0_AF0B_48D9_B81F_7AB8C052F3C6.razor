@@ -1,0 +1,111 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_31bf6cfc_cbd3_4c8b_9a92_eb212ad1af1f_Text())
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _e53a12a9_2a37_4cb3_ba4b_a2f43f262d90_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</a>
+@if (_5c5bf097_4a8a_4619_a44f_ce5acc535e8a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5c5bf097_4a8a_4619_a44f_ce5acc535e8a_buttonVisibilityTest = !_5c5bf097_4a8a_4619_a44f_ce5acc535e8a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f4c8bf12_6345_4ceb_856f_14b11c9bd679_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_379b2d59_e4b8_4774_be19_f13944087ba8_Text())
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+		<td>
+			Col2Row5
+		</td>
+		<td>
+			Col3Row5
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _5c5bf097_4a8a_4619_a44f_ce5acc535e8a_buttonVisibilityTest;
+	private string Get_bf49cbac_4634_4e3e_85e0_7367f6b39f16_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _e53a12a9_2a37_4cb3_ba4b_a2f43f262d90_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_31bf6cfc_cbd3_4c8b_9a92_eb212ad1af1f_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _f4c8bf12_6345_4ceb_856f_14b11c9bd679_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_379b2d59_e4b8_4774_be19_f13944087ba8_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

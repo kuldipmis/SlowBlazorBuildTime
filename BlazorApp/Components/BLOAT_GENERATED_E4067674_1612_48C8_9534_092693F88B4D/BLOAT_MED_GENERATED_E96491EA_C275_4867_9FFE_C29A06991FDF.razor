@@ -1,0 +1,67 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+	</tr>
+</table>
+<div class="@(Get_3c4cf248_e66d_4eab_8ec1_1d4bab5047c5_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_3c4cf248_e66d_4eab_8ec1_1d4bab5047c5_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _61512327_67b2_4e0e_b289_5d7bd17ce903_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

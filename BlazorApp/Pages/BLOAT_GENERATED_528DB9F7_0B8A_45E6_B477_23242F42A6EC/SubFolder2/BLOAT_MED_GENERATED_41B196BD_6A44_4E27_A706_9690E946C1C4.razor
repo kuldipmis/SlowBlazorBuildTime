@@ -1,0 +1,82 @@
+@using Telerik.Blazor.Components;
+@if (_3f39eb36_6edb_4b24_bf17_9bbc3ca8c450_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3f39eb36_6edb_4b24_bf17_9bbc3ca8c450_buttonVisibilityTest = !_3f39eb36_6edb_4b24_bf17_9bbc3ca8c450_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_559ac4ae_9034_4436_b40d_6e3bc7a07601_Text())
+</a>
+@if (_ceb9015e_2d0c_4a9b_9a0f_be962a96f3e8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ceb9015e_2d0c_4a9b_9a0f_be962a96f3e8_buttonVisibilityTest = !_ceb9015e_2d0c_4a9b_9a0f_be962a96f3e8_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _480468d1_5d34_4f58_99f1_4e69bcd567db_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _480468d1_5d34_4f58_99f1_4e69bcd567db_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _480468d1_5d34_4f58_99f1_4e69bcd567db_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _480468d1_5d34_4f58_99f1_4e69bcd567db_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _3f39eb36_6edb_4b24_bf17_9bbc3ca8c450_buttonVisibilityTest;
+	private bool _ceb9015e_2d0c_4a9b_9a0f_be962a96f3e8_buttonVisibilityTest;
+	private string GetAnchor_559ac4ae_9034_4436_b40d_6e3bc7a07601_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _480468d1_5d34_4f58_99f1_4e69bcd567db_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

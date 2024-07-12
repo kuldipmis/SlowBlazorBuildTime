@@ -1,0 +1,37 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_7a9df985_7655_4ccc_9aad_c5f629ff4e91_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _0684dee1_231e_4a76_9b39_d90aefd6a3b7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	<button>
+		This is a test button! 
+	</button>
+</button>
+@code { 
+
+	private void _7a9df985_7655_4ccc_9aad_c5f629ff4e91_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _0684dee1_231e_4a76_9b39_d90aefd6a3b7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

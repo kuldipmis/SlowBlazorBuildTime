@@ -1,0 +1,53 @@
+@using Telerik.Blazor.Components;
+@if (_50c4c9ab_fd3b_4582_9584_e8158e93b171_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _50c4c9ab_fd3b_4582_9584_e8158e93b171_buttonVisibilityTest = !_50c4c9ab_fd3b_4582_9584_e8158e93b171_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_809ea5f0_b6d2_4d50_9a45_5d52e6a113f2_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _809ea5f0_b6d2_4d50_9a45_5d52e6a113f2_buttonVisibilityTest = !_809ea5f0_b6d2_4d50_9a45_5d52e6a113f2_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f0851136_8b18_435b_b954_aa80b2f495e2_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _f0851136_8b18_435b_b954_aa80b2f495e2_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _f0851136_8b18_435b_b954_aa80b2f495e2_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ff7b7e90_54b8_4856_841f_9b42cf30de51_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _50c4c9ab_fd3b_4582_9584_e8158e93b171_buttonVisibilityTest;
+	private bool _809ea5f0_b6d2_4d50_9a45_5d52e6a113f2_buttonVisibilityTest;
+	private string _f0851136_8b18_435b_b954_aa80b2f495e2_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _ff7b7e90_54b8_4856_841f_9b42cf30de51_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

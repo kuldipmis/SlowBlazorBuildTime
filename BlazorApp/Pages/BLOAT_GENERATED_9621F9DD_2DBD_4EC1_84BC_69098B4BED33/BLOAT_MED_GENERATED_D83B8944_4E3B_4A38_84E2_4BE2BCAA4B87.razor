@@ -1,0 +1,55 @@
+
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+	</tr>
+</table>
+<div class="@(Get_28ff2569_c499_4210_87b4_ee8ad330cfb8_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_778836cb_844c_47f7_9fd8_8cdd23b09dc0_Class())">
+	<p>This div is a test!</p>
+</div>
+<a href="#">
+	@(GetAnchor_c573ff5c_faad_4b57_b513_d850799d23da_Text())
+</a>
+@code { 
+
+	private string Get_28ff2569_c499_4210_87b4_ee8ad330cfb8_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_778836cb_844c_47f7_9fd8_8cdd23b09dc0_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_c573ff5c_faad_4b57_b513_d850799d23da_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

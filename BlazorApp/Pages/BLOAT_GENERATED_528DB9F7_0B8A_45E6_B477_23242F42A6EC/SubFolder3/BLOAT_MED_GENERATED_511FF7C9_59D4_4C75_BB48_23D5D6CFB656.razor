@@ -1,0 +1,32 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_bc1f7009_736b_413f_8fdb_395ce831e0d2_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_e5b238d5_ef2d_45d4_a294_236e8325ffae_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string Get_bc1f7009_736b_413f_8fdb_395ce831e0d2_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _e5b238d5_ef2d_45d4_a294_236e8325ffae_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

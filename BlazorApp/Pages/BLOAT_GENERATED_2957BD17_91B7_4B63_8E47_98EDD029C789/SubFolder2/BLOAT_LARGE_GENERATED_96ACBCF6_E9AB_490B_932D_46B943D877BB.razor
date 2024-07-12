@@ -1,0 +1,52 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_a5507d90_dce2_4cd8_a7c4_04575db937f3_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f10769a2_b1b3_448b_b4f9_4f0f4dfba14c_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_448a1a41_bfc9_448c_bb20_d8047d6c472c_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_eea3f5b6_08f5_4c9d_9064_277805d6b755_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _eea3f5b6_08f5_4c9d_9064_277805d6b755_buttonVisibilityTest = !_eea3f5b6_08f5_4c9d_9064_277805d6b755_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_b0370d3c_75ac_4304_9481_c4d9129f95f9_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b0370d3c_75ac_4304_9481_c4d9129f95f9_buttonVisibilityTest = !_b0370d3c_75ac_4304_9481_c4d9129f95f9_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_5a3d8cc9_b9ad_4d36_a820_330a85fb1b84_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5a3d8cc9_b9ad_4d36_a820_330a85fb1b84_buttonVisibilityTest = !_5a3d8cc9_b9ad_4d36_a820_330a85fb1b84_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _eea3f5b6_08f5_4c9d_9064_277805d6b755_buttonVisibilityTest;
+	private bool _b0370d3c_75ac_4304_9481_c4d9129f95f9_buttonVisibilityTest;
+	private bool _5a3d8cc9_b9ad_4d36_a820_330a85fb1b84_buttonVisibilityTest;
+	private string GetAnchor_a5507d90_dce2_4cd8_a7c4_04575db937f3_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_e6d67ac6_64c5_4c96_9e9d_2a40249459a6_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _f10769a2_b1b3_448b_b4f9_4f0f4dfba14c_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_448a1a41_bfc9_448c_bb20_d8047d6c472c_Class()
+	{
+		return "alert alert-info";
+	}
+} 

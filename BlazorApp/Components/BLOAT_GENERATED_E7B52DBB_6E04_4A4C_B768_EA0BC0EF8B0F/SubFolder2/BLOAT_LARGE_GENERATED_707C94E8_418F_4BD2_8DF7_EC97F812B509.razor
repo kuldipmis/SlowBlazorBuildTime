@@ -1,0 +1,120 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_2cb3fb64_f6d8_4d9e_a90a_ea9e7b2b065a_GridOnRead"> 
+	<GridColumns> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _32301944_83ee_4afe_b8b4_78f62d762a04_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+			<TabStripTab> 
+				@{ var tabStrip1Data = _32301944_83ee_4afe_b8b4_78f62d762a04_GetTabStripData(); }
+				@tabStrip1Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_fcb03490_d00f_436d_8dd7_3bbc40c69d51_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_646600ba_051a_45a8_a829_0397565b4c79_Text())
+</a>
+@if (_3fb42796_ade9_480a_8c7a_88890e5a3e2e_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3fb42796_ade9_480a_8c7a_88890e5a3e2e_buttonVisibilityTest = !_3fb42796_ade9_480a_8c7a_88890e5a3e2e_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_311c924d_6b26_42b0_9e08_79fb9f2b35b1_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_a3388e7c_ab0e_427f_943c_7e94964ee44b_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_afdec9aa_4cbb_4fbb_a3a4_b267ded2a241_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _3fb42796_ade9_480a_8c7a_88890e5a3e2e_buttonVisibilityTest;
+	private string _32301944_83ee_4afe_b8b4_78f62d762a04_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _2cb3fb64_f6d8_4d9e_a90a_ea9e7b2b065a_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_fcb03490_d00f_436d_8dd7_3bbc40c69d51_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_646600ba_051a_45a8_a829_0397565b4c79_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _311c924d_6b26_42b0_9e08_79fb9f2b35b1_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _a3388e7c_ab0e_427f_943c_7e94964ee44b_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _afdec9aa_4cbb_4fbb_a3a4_b267ded2a241_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

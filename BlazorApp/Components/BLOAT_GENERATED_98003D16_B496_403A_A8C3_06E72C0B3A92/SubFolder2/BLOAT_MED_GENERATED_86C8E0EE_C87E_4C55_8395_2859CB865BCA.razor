@@ -1,0 +1,65 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_c7f2715c_b680_4d12_8ba8_fefebd7e7306_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_8381d3b7_c7fa_4581_b4bf_c159adacea9e_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _9c13ea91_2cd7_435e_9c66_dcf52e39ebda_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _9c13ea91_2cd7_435e_9c66_dcf52e39ebda_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _9c13ea91_2cd7_435e_9c66_dcf52e39ebda_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_c7f2715c_b680_4d12_8ba8_fefebd7e7306_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _8381d3b7_c7fa_4581_b4bf_c159adacea9e_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _9c13ea91_2cd7_435e_9c66_dcf52e39ebda_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

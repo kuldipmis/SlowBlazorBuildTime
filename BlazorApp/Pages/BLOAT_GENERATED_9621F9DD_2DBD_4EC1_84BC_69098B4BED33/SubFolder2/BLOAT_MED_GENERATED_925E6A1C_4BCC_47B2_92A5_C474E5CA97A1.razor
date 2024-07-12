@@ -1,0 +1,87 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_25a50811_cebe_41dd_8ef3_3b0b28c05041_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_c1e14056_5759_425a_a5ab_052ddfddb2eb_Class())">
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _c73aca72_3853_4443_b353_0999e751d28a_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _c73aca72_3853_4443_b353_0999e751d28a_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _c73aca72_3853_4443_b353_0999e751d28a_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip3Data = _c73aca72_3853_4443_b353_0999e751d28a_GetTabStripData(); }
+			@tabStrip3Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+		<td>
+			Col2Row5
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string Get_25a50811_cebe_41dd_8ef3_3b0b28c05041_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _c73aca72_3853_4443_b353_0999e751d28a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_c1e14056_5759_425a_a5ab_052ddfddb2eb_Class()
+	{
+		return "alert alert-info";
+	}
+} 

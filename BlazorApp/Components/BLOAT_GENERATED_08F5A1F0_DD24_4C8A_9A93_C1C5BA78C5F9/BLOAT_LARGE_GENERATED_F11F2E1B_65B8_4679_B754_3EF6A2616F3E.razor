@@ -1,0 +1,98 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+	</tr>
+</table>
+<div class="@(Get_5736833c_d5da_4e9b_9ba2_7229de2cbaba_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_4b09370c_8616_4099_938d_efb1096b04f8_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_0c60809a_de6a_475b_bb62_d37375d97591_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5b6427d1_479b_4433_86d9_ef940e7f0f7b_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_5736833c_d5da_4e9b_9ba2_7229de2cbaba_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_4b09370c_8616_4099_938d_efb1096b04f8_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _0c60809a_de6a_475b_bb62_d37375d97591_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _5b6427d1_479b_4433_86d9_ef940e7f0f7b_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

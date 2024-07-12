@@ -1,0 +1,52 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _4f564b1c_8966_4020_9da6_ae65304a5175_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_1d507e07_82a0_4fb1_9788_24186578113f_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1d507e07_82a0_4fb1_9788_24186578113f_buttonVisibilityTest = !_1d507e07_82a0_4fb1_9788_24186578113f_buttonVisibilityTest"> 
+		<table>
+			<tr>
+				<th>
+					Test Header 1
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Col1Row1
+				</td>
+				<td>
+					Col1Row2
+				</td>
+			</tr>
+		</table>
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_e4b5c445_b490_4eba_9015_ff8732b863de_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _1d507e07_82a0_4fb1_9788_24186578113f_buttonVisibilityTest;
+	private string _4f564b1c_8966_4020_9da6_ae65304a5175_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _e4b5c445_b490_4eba_9015_ff8732b863de_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

@@ -1,0 +1,72 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_d80535fc_5dd1_41e1_a7e9_9db233d1226c_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _23733e9d_df43_4e2d_822b_737bfda45722_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _23733e9d_df43_4e2d_822b_737bfda45722_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _23733e9d_df43_4e2d_822b_737bfda45722_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_e61b689c_248d_4379_8b75_f640c0371e21_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+
+	private string GetAnchor_d80535fc_5dd1_41e1_a7e9_9db233d1226c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _23733e9d_df43_4e2d_822b_737bfda45722_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_e61b689c_248d_4379_8b75_f640c0371e21_Class()
+	{
+		return "alert alert-info";
+	}
+} 

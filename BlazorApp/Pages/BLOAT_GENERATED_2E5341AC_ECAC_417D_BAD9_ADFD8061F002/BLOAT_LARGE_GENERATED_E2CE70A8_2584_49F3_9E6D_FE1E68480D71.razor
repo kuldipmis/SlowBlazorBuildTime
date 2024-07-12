@@ -1,0 +1,124 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b12284a3_63f9_4f15_867a_8acefb70ab4a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_a8d58f29_18bf_46b3_949d_88861aee45be_Text())
+</a>
+<div class="@(Get_cd8af0c3_0872_49cc_9625_a90169327afc_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_6be3c1f7_722b_4acf_9663_1488c8a9994a_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _6987b684_c483_4ef0_9f0d_9b1bba71f798_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _6987b684_c483_4ef0_9f0d_9b1bba71f798_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _6987b684_c483_4ef0_9f0d_9b1bba71f798_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _6987b684_c483_4ef0_9f0d_9b1bba71f798_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_f05f7b86_06a2_4be0_a294_2ea25e3f8440_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _f05f7b86_06a2_4be0_a294_2ea25e3f8440_buttonVisibilityTest = !_f05f7b86_06a2_4be0_a294_2ea25e3f8440_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	@if (_f03f2dba_a66d_4750_97f8_673da354d976_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _f03f2dba_a66d_4750_97f8_673da354d976_buttonVisibilityTest = !_f03f2dba_a66d_4750_97f8_673da354d976_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _af55765f_c8ca_4335_83d0_039b527e33ab_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _baffce70_ecfb_4057_94b0_29d0fbbf3bb1_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+			<TabStripTab> 
+				@{ var tabStrip1Data = _baffce70_ecfb_4057_94b0_29d0fbbf3bb1_GetTabStripData(); }
+				@tabStrip1Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_6ec07fc8_5b7e_40b7_b12b_2ebe60ed05ce_Text())
+	@if (_92865811_668e_4947_b431_0cdb958e1072_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _92865811_668e_4947_b431_0cdb958e1072_buttonVisibilityTest = !_92865811_668e_4947_b431_0cdb958e1072_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</a>
+@code { 
+	private bool _37ad37a1_7b45_4589_83a0_4725b017704a_buttonVisibilityTest;
+	private bool _f05f7b86_06a2_4be0_a294_2ea25e3f8440_buttonVisibilityTest;
+	private bool _f03f2dba_a66d_4750_97f8_673da354d976_buttonVisibilityTest;
+	private bool _92865811_668e_4947_b431_0cdb958e1072_buttonVisibilityTest;
+	private string _b12284a3_63f9_4f15_867a_8acefb70ab4a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_a8d58f29_18bf_46b3_949d_88861aee45be_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_cd8af0c3_0872_49cc_9625_a90169327afc_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _6be3c1f7_722b_4acf_9663_1488c8a9994a_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _6987b684_c483_4ef0_9f0d_9b1bba71f798_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _baffce70_ecfb_4057_94b0_29d0fbbf3bb1_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _af55765f_c8ca_4335_83d0_039b527e33ab_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_6ec07fc8_5b7e_40b7_b12b_2ebe60ed05ce_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

@@ -1,0 +1,66 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_afe0e509_4d75_4e6a_b4ae_f7f8a82ae2e1_Text())
+</a>
+@if (_735fa4f3_7871_43d2_814c_5e0ad94e68d2_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _735fa4f3_7871_43d2_814c_5e0ad94e68d2_buttonVisibilityTest = !_735fa4f3_7871_43d2_814c_5e0ad94e68d2_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_48c0aec0_1a8d_4fe8_bcac_90c8a1a82f89_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _7557626f_fe18_4616_a5fc_23082d4bd9ce_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _7557626f_fe18_4616_a5fc_23082d4bd9ce_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_c1fe78fd_43fe_4bc9_a6ee_e8bf72f64763_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_cd96a4a6_061e_415b_bede_8c7432739921_Text())
+</a>
+@code { 
+	private bool _735fa4f3_7871_43d2_814c_5e0ad94e68d2_buttonVisibilityTest;
+	private string GetAnchor_afe0e509_4d75_4e6a_b4ae_f7f8a82ae2e1_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_48c0aec0_1a8d_4fe8_bcac_90c8a1a82f89_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _7557626f_fe18_4616_a5fc_23082d4bd9ce_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _c1fe78fd_43fe_4bc9_a6ee_e8bf72f64763_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_cd96a4a6_061e_415b_bede_8c7432739921_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

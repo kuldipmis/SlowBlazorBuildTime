@@ -1,0 +1,73 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_1e0fb61c_8da8_4d8c_8f73_670270a04860_Text())
+</a>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_16e67f81_c0dc_491e_a5df_f9caa3ebd0aa_GridOnRead"> 
+	<GridColumns> 
+		@if (_21db97ed_9c91_4006_af81_473e9cb34df7_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _21db97ed_9c91_4006_af81_473e9cb34df7_buttonVisibilityTest = !_21db97ed_9c91_4006_af81_473e9cb34df7_buttonVisibilityTest"> 
+				@if (_0a31fef2_b5d2_48a0_95a1_17f99fcc6737_buttonVisibilityTest) 
+				{
+					<TelerikButton OnClick="() => _0a31fef2_b5d2_48a0_95a1_17f99fcc6737_buttonVisibilityTest = !_0a31fef2_b5d2_48a0_95a1_17f99fcc6737_buttonVisibilityTest"> 
+						<div class="@(Get_15ba3d27_7e39_408c_9cff_6356ecc18513_Class())">
+							<p>This div is a test!</p>
+						</div>
+					</TelerikButton> 
+				}
+			</TelerikButton> 
+		}
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_379e7523_8568_48ee_83d4_067a661591ec_Text())
+	<div class="@(Get_6ead7831_af3c_417b_897e_dbcb8b117489_Class())">
+		<p>This div is a test!</p>
+	</div>
+</a>
+@if (_ebc707a1_6bfb_48dd_b2f8_f80f187103a0_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ebc707a1_6bfb_48dd_b2f8_f80f187103a0_buttonVisibilityTest = !_ebc707a1_6bfb_48dd_b2f8_f80f187103a0_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_cdf57888_6b81_4966_8b52_b09011960da4_Text())
+</a>
+@code { 
+	private bool _0a31fef2_b5d2_48a0_95a1_17f99fcc6737_buttonVisibilityTest;
+	private bool _21db97ed_9c91_4006_af81_473e9cb34df7_buttonVisibilityTest;
+	private bool _ebc707a1_6bfb_48dd_b2f8_f80f187103a0_buttonVisibilityTest;
+	private string GetAnchor_1e0fb61c_8da8_4d8c_8f73_670270a04860_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_15ba3d27_7e39_408c_9cff_6356ecc18513_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _16e67f81_c0dc_491e_a5df_f9caa3ebd0aa_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_6ead7831_af3c_417b_897e_dbcb8b117489_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_379e7523_8568_48ee_83d4_067a661591ec_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_cdf57888_6b81_4966_8b52_b09011960da4_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

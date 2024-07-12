@@ -1,0 +1,61 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_a8a2b303_b74c_4eca_8e44_dcc8e8a21021_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_e18068fc_3cc4_487e_ac50_529f80dd3c69_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_d6e1d84f_accb_45bd_b212_4eae5bc14fb5_Text())
+</a>
+@if (_ef2b177c_0922_4362_ae9c_8609cc905ead_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ef2b177c_0922_4362_ae9c_8609cc905ead_buttonVisibilityTest = !_ef2b177c_0922_4362_ae9c_8609cc905ead_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_64fded85_ceef_47d1_b31e_27de7fd5b950_Text())
+</a>
+<button>
+	@if (_7198f6ec_b104_443f_ae92_7036f63a2d51_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _7198f6ec_b104_443f_ae92_7036f63a2d51_buttonVisibilityTest = !_7198f6ec_b104_443f_ae92_7036f63a2d51_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</button>
+@code { 
+	private bool _ef2b177c_0922_4362_ae9c_8609cc905ead_buttonVisibilityTest;
+	private bool _7198f6ec_b104_443f_ae92_7036f63a2d51_buttonVisibilityTest;
+	private string Get_a8a2b303_b74c_4eca_8e44_dcc8e8a21021_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _e18068fc_3cc4_487e_ac50_529f80dd3c69_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_d6e1d84f_accb_45bd_b212_4eae5bc14fb5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_64fded85_ceef_47d1_b31e_27de7fd5b950_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

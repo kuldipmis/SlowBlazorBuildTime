@@ -1,0 +1,136 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_d002492f_2e02_4ea1_a929_075c353aac68_Text())
+</a>
+<a href="#">
+	@(GetAnchor_53ce7096_7980_47c4_ac5f_21c3d1fd1835_Text())
+</a>
+@if (_ccd02a91_ebc1_48d8_b323_b11a6842401b_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ccd02a91_ebc1_48d8_b323_b11a6842401b_buttonVisibilityTest = !_ccd02a91_ebc1_48d8_b323_b11a6842401b_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5b9c7917_a9cf_4d5f_bd34_f2762d0a864d_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _5b9c7917_a9cf_4d5f_bd34_f2762d0a864d_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _5b9c7917_a9cf_4d5f_bd34_f2762d0a864d_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+@if (_52e6ee95_0422_4919_99d8_bf0607128eca_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _52e6ee95_0422_4919_99d8_bf0607128eca_buttonVisibilityTest = !_52e6ee95_0422_4919_99d8_bf0607128eca_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _478e1cb9_6059_4ad9_bc00_74d4e6decd1e_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _478e1cb9_6059_4ad9_bc00_74d4e6decd1e_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _478e1cb9_6059_4ad9_bc00_74d4e6decd1e_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_dbdd880c_44d6_4548_9452_9913e94865f4_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_afdf9c8c_3793_484e_b083_a028b0372da1_Text())
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _35fadc87_b290_4f22_a379_ac530e0174e6_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _35fadc87_b290_4f22_a379_ac530e0174e6_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _35fadc87_b290_4f22_a379_ac530e0174e6_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</a>
+<button>
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+		</tr>
+	</table>
+</button>
+@code { 
+	private bool _ccd02a91_ebc1_48d8_b323_b11a6842401b_buttonVisibilityTest;
+	private bool _52e6ee95_0422_4919_99d8_bf0607128eca_buttonVisibilityTest;
+	private string GetAnchor_d002492f_2e02_4ea1_a929_075c353aac68_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_53ce7096_7980_47c4_ac5f_21c3d1fd1835_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _5b9c7917_a9cf_4d5f_bd34_f2762d0a864d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _478e1cb9_6059_4ad9_bc00_74d4e6decd1e_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _dbdd880c_44d6_4548_9452_9913e94865f4_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _35fadc87_b290_4f22_a379_ac530e0174e6_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_afdf9c8c_3793_484e_b083_a028b0372da1_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

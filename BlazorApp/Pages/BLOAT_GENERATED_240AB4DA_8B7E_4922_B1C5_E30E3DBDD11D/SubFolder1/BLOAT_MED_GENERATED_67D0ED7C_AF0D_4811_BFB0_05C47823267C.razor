@@ -1,0 +1,34 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_5d4bacfe_2228_4b5a_acf0_b3d5f1e467ae_Class())">
+	<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_1a29ab6e_e2ea_4598_b395_822bd319bbe9_GridOnRead"> 
+		<GridColumns> 
+			<GridColumn Field="Item1" Title="TestColumn1"/> 
+			<GridColumn Field="Item2" Title="TestColumn2"/> 
+		</GridColumns> 
+	</TelerikGrid> 
+</div>
+@if (_cc7119ec_f1d9_4727_bc0e_617edbd40d40_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _cc7119ec_f1d9_4727_bc0e_617edbd40d40_buttonVisibilityTest = !_cc7119ec_f1d9_4727_bc0e_617edbd40d40_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _cc7119ec_f1d9_4727_bc0e_617edbd40d40_buttonVisibilityTest;
+	private void _1a29ab6e_e2ea_4598_b395_822bd319bbe9_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_5d4bacfe_2228_4b5a_acf0_b3d5f1e467ae_Class()
+	{
+		return "alert alert-info";
+	}
+} 

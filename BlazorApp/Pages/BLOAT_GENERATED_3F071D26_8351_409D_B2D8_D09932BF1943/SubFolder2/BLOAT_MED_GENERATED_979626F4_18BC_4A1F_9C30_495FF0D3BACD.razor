@@ -1,0 +1,29 @@
+@using Telerik.Blazor.Components;
+@if (_88ebddc0_81d7_48fd_855c_b421d7910826_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _88ebddc0_81d7_48fd_855c_b421d7910826_buttonVisibilityTest = !_88ebddc0_81d7_48fd_855c_b421d7910826_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_37b6ca23_8cbb_453c_8296_877f4b0f4852_Class())">
+	<p>This div is a test!</p>
+</div>
+<button>
+	This is a test button! 
+</button>
+@if (_638de26b_60e2_43cb_8498_d57cf906d3d4_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _638de26b_60e2_43cb_8498_d57cf906d3d4_buttonVisibilityTest = !_638de26b_60e2_43cb_8498_d57cf906d3d4_buttonVisibilityTest"> 
+		<button>
+			This is a test button! 
+		</button>
+	</TelerikButton> 
+}
+@code { 
+	private bool _88ebddc0_81d7_48fd_855c_b421d7910826_buttonVisibilityTest;
+	private bool _638de26b_60e2_43cb_8498_d57cf906d3d4_buttonVisibilityTest;
+	private string Get_37b6ca23_8cbb_453c_8296_877f4b0f4852_Class()
+	{
+		return "alert alert-info";
+	}
+} 

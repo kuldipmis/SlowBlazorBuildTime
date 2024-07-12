@@ -1,0 +1,108 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_4210202e_b9e3_464e_bcc0_a7e25faed387_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _9f0575ff_c349_4867_8e9c_9e726d1b1a24_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+	</tr>
+</table>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_388356ca_160c_4849_bf4a_e5401f88c9ab_GridOnRead"> 
+	<GridColumns> 
+		<div class="@(Get_f4f52684_1d5b_4f72_b109_3b06cc1233f2_Class())">
+			<p>This div is a test!</p>
+		</div>
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a7a7a093_96fd_4c28_a551_8b58b49d7364_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string GetAnchor_4210202e_b9e3_464e_bcc0_a7e25faed387_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _9f0575ff_c349_4867_8e9c_9e726d1b1a24_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_f4f52684_1d5b_4f72_b109_3b06cc1233f2_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _388356ca_160c_4849_bf4a_e5401f88c9ab_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _a7a7a093_96fd_4c28_a551_8b58b49d7364_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,126 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_0c930037_91ad_4a0e_aa8f_9d7430860ac9_GridOnRead"> 
+	<GridColumns> 
+		@if (_749a0f5b_cb47_4914_9770_553126d93b7e_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _749a0f5b_cb47_4914_9770_553126d93b7e_buttonVisibilityTest = !_749a0f5b_cb47_4914_9770_553126d93b7e_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_d7aa19da_589c_40ea_8b63_658b767a7d5d_Text())
+</a>
+<button>
+	This is a test button! 
+</button>
+@if (_e7bc9ffe_39a2_4f56_89c9_4ca3670ddb46_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e7bc9ffe_39a2_4f56_89c9_4ca3670ddb46_buttonVisibilityTest = !_e7bc9ffe_39a2_4f56_89c9_4ca3670ddb46_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+	</tr>
+</table>
+@if (_0c0eee5c_0297_4068_9985_1cbb3c99a7f1_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _0c0eee5c_0297_4068_9985_1cbb3c99a7f1_buttonVisibilityTest = !_0c0eee5c_0297_4068_9985_1cbb3c99a7f1_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_0fd4634b_1852_4929_8ecc_8e3697c4d1bb_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _0fd4634b_1852_4929_8ecc_8e3697c4d1bb_buttonVisibilityTest = !_0fd4634b_1852_4929_8ecc_8e3697c4d1bb_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_bc433d88_43c3_40e1_94d7_272fa91df04e_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _bc433d88_43c3_40e1_94d7_272fa91df04e_buttonVisibilityTest = !_bc433d88_43c3_40e1_94d7_272fa91df04e_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_b2ece0ae_1d74_4bd4_8126_a8019a458e19_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_316ed30c_8d6e_4a70_a0ef_ca94385df21f_Text())
+</a>
+<div class="@(Get_84b2c0a2_9b93_4093_b704_22ed9fd06051_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _749a0f5b_cb47_4914_9770_553126d93b7e_buttonVisibilityTest;
+	private bool _e7bc9ffe_39a2_4f56_89c9_4ca3670ddb46_buttonVisibilityTest;
+	private bool _0c0eee5c_0297_4068_9985_1cbb3c99a7f1_buttonVisibilityTest;
+	private bool _0fd4634b_1852_4929_8ecc_8e3697c4d1bb_buttonVisibilityTest;
+	private bool _bc433d88_43c3_40e1_94d7_272fa91df04e_buttonVisibilityTest;
+	private void _0c930037_91ad_4a0e_aa8f_9d7430860ac9_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_d7aa19da_589c_40ea_8b63_658b767a7d5d_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _b2ece0ae_1d74_4bd4_8126_a8019a458e19_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_316ed30c_8d6e_4a70_a0ef_ca94385df21f_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_84b2c0a2_9b93_4093_b704_22ed9fd06051_Class()
+	{
+		return "alert alert-info";
+	}
+} 

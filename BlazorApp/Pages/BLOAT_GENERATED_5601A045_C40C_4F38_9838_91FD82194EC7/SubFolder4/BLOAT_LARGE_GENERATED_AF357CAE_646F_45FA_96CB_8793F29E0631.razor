@@ -1,0 +1,154 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_37045fdc_fb5f_4519_928f_ddc485d52c11_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_aae1895b_0cdc_4f5c_b549_a8ffd3a831b7_GridOnRead"> 
+	<GridColumns> 
+		<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_73531bc8_2fda_47de_ac87_b2c87d1c7107_GridOnRead"> 
+			<GridColumns> 
+				<table>
+					<tr>
+						<th>
+							Test Header 1
+						</th>
+						<th>
+							Test Header 2
+						</th>
+						<th>
+							Test Header 3
+						</th>
+						<th>
+							Test Header 4
+						</th>
+						<th>
+							Test Header 5
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Col1Row1
+						</td>
+						<td>
+							Col2Row1
+						</td>
+						<td>
+							Col3Row1
+						</td>
+						<td>
+							Col4Row1
+						</td>
+						<td>
+							Col5Row1
+						</td>
+					</tr>
+				</table>
+			</GridColumns> 
+		</TelerikGrid> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	This is a test button! 
+</button>
+<button>
+	<div class="@(Get_9d3bd7a8_83dc_408f_b444_7d81e319077a_Class())">
+		<p>This div is a test!</p>
+	</div>
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_1b79e7a7_ee2c_4760_b487_4f7868813da7_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_31ef2104_059d_4025_99db_ee5f3fdcf922_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _31ef2104_059d_4025_99db_ee5f3fdcf922_buttonVisibilityTest = !_31ef2104_059d_4025_99db_ee5f3fdcf922_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _0efbb422_0dc1_41d7_b713_5e839ff16589_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+	</tr>
+</table>
+<div class="@(Get_745a2eae_9c95_4b28_82af_fb0420c86361_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _31ef2104_059d_4025_99db_ee5f3fdcf922_buttonVisibilityTest;
+	private bool _decd8d5b_1dc2_4dc1_a616_7d53494c1e30_buttonVisibilityTest;
+	private string Get_37045fdc_fb5f_4519_928f_ddc485d52c11_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _73531bc8_2fda_47de_ac87_b2c87d1c7107_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _aae1895b_0cdc_4f5c_b549_a8ffd3a831b7_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_9d3bd7a8_83dc_408f_b444_7d81e319077a_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _1b79e7a7_ee2c_4760_b487_4f7868813da7_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _0efbb422_0dc1_41d7_b713_5e839ff16589_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_745a2eae_9c95_4b28_82af_fb0420c86361_Class()
+	{
+		return "alert alert-info";
+	}
+} 

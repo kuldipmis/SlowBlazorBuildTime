@@ -1,0 +1,84 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b4faf254_11be_4346_b798_6e23ef9f50dd_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+@if (_1ddd4ad1_573e_4785_8f8b_8019e62d3a63_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1ddd4ad1_573e_4785_8f8b_8019e62d3a63_buttonVisibilityTest = !_1ddd4ad1_573e_4785_8f8b_8019e62d3a63_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_b42f94c1_8b9e_4c9d_8fcc_9ef235d0f700_Text())
+	<div class="@(Get_a9bd9ede_150e_4eda_bfab_5abcca2d5cba_Class())">
+		<p>This div is a test!</p>
+	</div>
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+	</tr>
+</table>
+<button>
+	@if (_0a62c753_6a55_4669_babc_2713586d38b6_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _0a62c753_6a55_4669_babc_2713586d38b6_buttonVisibilityTest = !_0a62c753_6a55_4669_babc_2713586d38b6_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</button>
+@code { 
+	private bool _3e8575d1_a47b_48aa_a45d_0378cae9a2c8_buttonVisibilityTest;
+	private bool _1ddd4ad1_573e_4785_8f8b_8019e62d3a63_buttonVisibilityTest;
+	private bool _0a62c753_6a55_4669_babc_2713586d38b6_buttonVisibilityTest;
+	private string _45d2e881_eab4_49f0_aff1_6f7249ba8971_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _b4faf254_11be_4346_b798_6e23ef9f50dd_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_a9bd9ede_150e_4eda_bfab_5abcca2d5cba_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_b42f94c1_8b9e_4c9d_8fcc_9ef235d0f700_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

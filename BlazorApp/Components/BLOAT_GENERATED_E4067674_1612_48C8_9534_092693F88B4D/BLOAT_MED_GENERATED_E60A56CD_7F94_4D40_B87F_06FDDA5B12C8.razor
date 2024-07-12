@@ -1,0 +1,43 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _e8d7f22a_9f1d_450d_b4fe_2e9d27eef03a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _e8d7f22a_9f1d_450d_b4fe_2e9d27eef03a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_af74c561_2d04_4012_a39e_55ac518f135b_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _e8aef0ce_5ac2_4128_8e92_6f1e55795f3b_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _e8aef0ce_5ac2_4128_8e92_6f1e55795f3b_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string _e8d7f22a_9f1d_450d_b4fe_2e9d27eef03a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_af74c561_2d04_4012_a39e_55ac518f135b_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _10228b2a_c3c4_4e42_bdd0_5bc0040c78d1_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _e8aef0ce_5ac2_4128_8e92_6f1e55795f3b_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

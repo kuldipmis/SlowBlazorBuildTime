@@ -1,0 +1,133 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_e3169a59_1882_434e_a868_38a83e8dd71f_Text())
+</a>
+@if (_a0f5cfd9_65c6_486c_999f_266c4d6a7bf9_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _a0f5cfd9_65c6_486c_999f_266c4d6a7bf9_buttonVisibilityTest = !_a0f5cfd9_65c6_486c_999f_266c4d6a7bf9_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _2bb9fda9_220b_48fa_8d90_6a365bb68a34_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _2bb9fda9_220b_48fa_8d90_6a365bb68a34_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_ac0b9911_3925_4ab5_a41f_a21f90317a2b_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ac0b9911_3925_4ab5_a41f_a21f90317a2b_buttonVisibilityTest = !_ac0b9911_3925_4ab5_a41f_a21f90317a2b_buttonVisibilityTest"> 
+		<table>
+			<tr>
+				<th>
+					Test Header 1
+				</th>
+				<th>
+					Test Header 2
+				</th>
+				<th>
+					Test Header 3
+				</th>
+				<th>
+					Test Header 4
+				</th>
+				<th>
+					Test Header 5
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Col1Row1
+				</td>
+				<td>
+					Col2Row1
+				</td>
+				<td>
+					Col3Row1
+				</td>
+				<td>
+					Col4Row1
+				</td>
+				<td>
+					Col5Row1
+				</td>
+				<td>
+					Col1Row2
+				</td>
+				<td>
+					Col2Row2
+				</td>
+				<td>
+					Col3Row2
+				</td>
+				<td>
+					Col4Row2
+				</td>
+				<td>
+					Col5Row2
+				</td>
+				<td>
+					Col1Row3
+				</td>
+				<td>
+					Col2Row3
+				</td>
+				<td>
+					Col3Row3
+				</td>
+				<td>
+					Col4Row3
+				</td>
+				<td>
+					Col5Row3
+				</td>
+				<td>
+					Col1Row4
+				</td>
+				<td>
+					Col2Row4
+				</td>
+				<td>
+					Col3Row4
+				</td>
+				<td>
+					Col4Row4
+				</td>
+				<td>
+					Col5Row4
+				</td>
+				<td>
+					Col1Row5
+				</td>
+				<td>
+					Col2Row5
+				</td>
+				<td>
+					Col3Row5
+				</td>
+				<td>
+					Col4Row5
+				</td>
+				<td>
+					Col5Row5
+				</td>
+			</tr>
+		</table>
+	</TelerikButton> 
+}
+@code { 
+	private bool _a0f5cfd9_65c6_486c_999f_266c4d6a7bf9_buttonVisibilityTest;
+	private bool _ac0b9911_3925_4ab5_a41f_a21f90317a2b_buttonVisibilityTest;
+	private string GetAnchor_e3169a59_1882_434e_a868_38a83e8dd71f_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _2bb9fda9_220b_48fa_8d90_6a365bb68a34_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

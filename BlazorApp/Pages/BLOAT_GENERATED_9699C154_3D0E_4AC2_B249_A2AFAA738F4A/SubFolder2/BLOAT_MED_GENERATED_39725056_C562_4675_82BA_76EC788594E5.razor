@@ -1,0 +1,33 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_5ac3a5b4_53f8_4341_847b_a8ea89610d8b_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d7107f1a_b4e5_4a74_bebb_2a4d4d9baafd_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_5ac3a5b4_53f8_4341_847b_a8ea89610d8b_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _638d66f2_020e_4efd_bf39_b872f336490e_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _d7107f1a_b4e5_4a74_bebb_2a4d4d9baafd_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,104 @@
+@using Telerik.Blazor.Components;
+@if (_574fa7d1_e150_4eb5_ac1d_7b70b8d6afbe_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _574fa7d1_e150_4eb5_ac1d_7b70b8d6afbe_buttonVisibilityTest = !_574fa7d1_e150_4eb5_ac1d_7b70b8d6afbe_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_0652b14d_dbab_4210_b47a_9dffbbf04310_Text())
+</a>
+<a href="#">
+	@(GetAnchor_f1573c50_af6d_47d5_9422_22f728a7af86_Text())
+</a>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_6bba0f4a_c577_4b83_b4b0_a7ee6058bcd3_GridOnRead"> 
+	<GridColumns> 
+		<a href="#">
+			@(GetAnchor_aab547ec_a77a_43b7_8bb9_5b476fbac947_Text())
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+					<td>
+						Col4Row2
+					</td>
+					<td>
+						Col1Row3
+					</td>
+					<td>
+						Col2Row3
+					</td>
+					<td>
+						Col3Row3
+					</td>
+					<td>
+						Col4Row3
+					</td>
+				</tr>
+			</table>
+		</a>
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _574fa7d1_e150_4eb5_ac1d_7b70b8d6afbe_buttonVisibilityTest;
+	private string GetAnchor_0652b14d_dbab_4210_b47a_9dffbbf04310_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_f1573c50_af6d_47d5_9422_22f728a7af86_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_aab547ec_a77a_43b7_8bb9_5b476fbac947_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _6bba0f4a_c577_4b83_b4b0_a7ee6058bcd3_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

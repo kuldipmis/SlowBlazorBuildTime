@@ -1,0 +1,68 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_2000d0b9_3338_416a_8e15_e9ef9fe2e31a_Text())
+</a>
+<div class="@(Get_b35a0b81_7345_4653_b6cd_adcdfae7c30f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_487ae5fa_bd3a_45e4_a37e_537e6980d9f0_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string _6409b85c_835d_4370_b60c_e780049b6ba7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_2000d0b9_3338_416a_8e15_e9ef9fe2e31a_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_b35a0b81_7345_4653_b6cd_adcdfae7c30f_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _487ae5fa_bd3a_45e4_a37e_537e6980d9f0_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

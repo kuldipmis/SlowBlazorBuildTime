@@ -1,0 +1,79 @@
+@using Telerik.Blazor.Components;
+@if (_b3574100_dafc_4d31_8dac_47f3ff6eb9c3_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b3574100_dafc_4d31_8dac_47f3ff6eb9c3_buttonVisibilityTest = !_b3574100_dafc_4d31_8dac_47f3ff6eb9c3_buttonVisibilityTest"> 
+		@if (_cf487067_9a8e_487a_8af6_c6268a896be7_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _cf487067_9a8e_487a_8af6_c6268a896be7_buttonVisibilityTest = !_cf487067_9a8e_487a_8af6_c6268a896be7_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</TelerikButton> 
+}
+@if (_022af7f6_62ac_46c7_b744_bbc412d8cca7_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _022af7f6_62ac_46c7_b744_bbc412d8cca7_buttonVisibilityTest = !_022af7f6_62ac_46c7_b744_bbc412d8cca7_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _cf487067_9a8e_487a_8af6_c6268a896be7_buttonVisibilityTest;
+	private bool _b3574100_dafc_4d31_8dac_47f3ff6eb9c3_buttonVisibilityTest;
+	private bool _022af7f6_62ac_46c7_b744_bbc412d8cca7_buttonVisibilityTest;
+	private string _7bb725e5_41c6_4bf6_8ffb_1fffa0195dcd_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,105 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+	</tr>
+</table>
+@if (_5abfcee0_05c2_49ca_ba48_703d2cacf5d4_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5abfcee0_05c2_49ca_ba48_703d2cacf5d4_buttonVisibilityTest = !_5abfcee0_05c2_49ca_ba48_703d2cacf5d4_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_44800243_d931_4f94_8c55_b6bbe5a5ea71_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _44800243_d931_4f94_8c55_b6bbe5a5ea71_buttonVisibilityTest = !_44800243_d931_4f94_8c55_b6bbe5a5ea71_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _5abfcee0_05c2_49ca_ba48_703d2cacf5d4_buttonVisibilityTest;
+	private bool _44800243_d931_4f94_8c55_b6bbe5a5ea71_buttonVisibilityTest;
+	private void _00eb2037_ef44_404d_baa0_a64976d62a9e_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

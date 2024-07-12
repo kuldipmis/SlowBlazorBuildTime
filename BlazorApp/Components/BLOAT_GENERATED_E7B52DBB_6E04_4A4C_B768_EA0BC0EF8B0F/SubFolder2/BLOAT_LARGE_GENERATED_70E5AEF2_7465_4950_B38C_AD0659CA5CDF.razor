@@ -1,0 +1,208 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _3926fe48_78df_4728_8f92_965fd5a8ea91_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _3926fe48_78df_4728_8f92_965fd5a8ea91_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _e065585f_11e6_4067_9c24_cac4a791c95a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _e065585f_11e6_4067_9c24_cac4a791c95a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _e065585f_11e6_4067_9c24_cac4a791c95a_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_e0dfbca2_e483_4915_8231_f9d976b78fab_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e0dfbca2_e483_4915_8231_f9d976b78fab_buttonVisibilityTest = !_e0dfbca2_e483_4915_8231_f9d976b78fab_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_4f7504e2_4e13_456d_8359_d945519d4342_GridOnRead"> 
+	<GridColumns> 
+		@if (_514ba91e_c4ec_4b1f_b638_6a91a1274652_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _514ba91e_c4ec_4b1f_b638_6a91a1274652_buttonVisibilityTest = !_514ba91e_c4ec_4b1f_b638_6a91a1274652_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_367a5daf_1a4c_4c69_8be9_0305c1bbdb5c_GridOnRead"> 
+	<GridColumns> 
+		<button>
+			<a href="#">
+				@(GetAnchor_7e584a43_e250_4448_98b4_e73cad0ef503_Text())
+			</a>
+		</button>
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_100f4873_05de_42a6_8c78_91d5ff486f0c_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _0e88ae88_cea0_4661_9d35_c17db822b0a6_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _0e88ae88_cea0_4661_9d35_c17db822b0a6_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _0e88ae88_cea0_4661_9d35_c17db822b0a6_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _0e88ae88_cea0_4661_9d35_c17db822b0a6_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_48612027_f258_496d_af21_2fac10570596_Text())
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_6a10bc03_3028_446c_9326_d62fb781cfb3_Text())
+</a>
+<a href="#">
+	@(GetAnchor_8f1d4feb_3269_4195_b9f4_e4300cbb9200_Text())
+</a>
+@code { 
+	private bool _e0dfbca2_e483_4915_8231_f9d976b78fab_buttonVisibilityTest;
+	private bool _514ba91e_c4ec_4b1f_b638_6a91a1274652_buttonVisibilityTest;
+	private string _3926fe48_78df_4728_8f92_965fd5a8ea91_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _e065585f_11e6_4067_9c24_cac4a791c95a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _4f7504e2_4e13_456d_8359_d945519d4342_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_7e584a43_e250_4448_98b4_e73cad0ef503_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _367a5daf_1a4c_4c69_8be9_0305c1bbdb5c_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _100f4873_05de_42a6_8c78_91d5ff486f0c_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _0e88ae88_cea0_4661_9d35_c17db822b0a6_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_48612027_f258_496d_af21_2fac10570596_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_6a10bc03_3028_446c_9326_d62fb781cfb3_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_8f1d4feb_3269_4195_b9f4_e4300cbb9200_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

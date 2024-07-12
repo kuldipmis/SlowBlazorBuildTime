@@ -1,0 +1,73 @@
+@using Telerik.Blazor.Components;
+<button>
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _d77eeb1a_0a13_48b9_ab60_f2293a9060f9_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _d77eeb1a_0a13_48b9_ab60_f2293a9060f9_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+				</tr>
+			</table>
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_564d62b9_21e0_47f7_be29_9728ea336c56_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+
+	private string _d77eeb1a_0a13_48b9_ab60_f2293a9060f9_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _564d62b9_21e0_47f7_be29_9728ea336c56_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

@@ -1,0 +1,102 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_54b2a41d_c5e7_44a2_9487_de88533087de_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a8c4794d_65e0_4c78_9360_2c2cfb41485f_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a8c4794d_65e0_4c78_9360_2c2cfb41485f_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_89d5b382_3f0a_42d6_9166_e86ef9fc7733_Class())">
+	<p>This div is a test!</p>
+</div>
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _1b058481_ca05_483f_a8f9_592f38bdd505_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _1b058481_ca05_483f_a8f9_592f38bdd505_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _fb956b29_37aa_440b_888c_42854887747b_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _fb956b29_37aa_440b_888c_42854887747b_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _fb956b29_37aa_440b_888c_42854887747b_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+	</tr>
+</table>
+@code { 
+
+	private void _54b2a41d_c5e7_44a2_9487_de88533087de_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _a8c4794d_65e0_4c78_9360_2c2cfb41485f_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_89d5b382_3f0a_42d6_9166_e86ef9fc7733_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _1b058481_ca05_483f_a8f9_592f38bdd505_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _fb956b29_37aa_440b_888c_42854887747b_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

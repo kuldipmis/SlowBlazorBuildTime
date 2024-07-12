@@ -1,0 +1,86 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _706bf5e5_eaf4_47ac_b134_59c1b5485a96_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _706bf5e5_eaf4_47ac_b134_59c1b5485a96_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _706bf5e5_eaf4_47ac_b134_59c1b5485a96_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_8e4f4e82_9615_4256_9944_2d2afdcadc79_Text())
+</a>
+<div class="@(Get_b9593ac6_0bd3_4b0a_a8a1_502414b2942f_Class())">
+	<p>This div is a test!</p>
+</div>
+<a href="#">
+	@(GetAnchor_543f1b3e_ec55_47b3_868d_73a263350281_Text())
+</a>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_a63e9d9c_70cf_41dd_b165_5c026e325b9b_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_bd07bce4_54e2_48da_b71a_65308788850f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_3062d313_085a_4525_9924_8d15f54202f4_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+
+	private string _706bf5e5_eaf4_47ac_b134_59c1b5485a96_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_8e4f4e82_9615_4256_9944_2d2afdcadc79_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_b9593ac6_0bd3_4b0a_a8a1_502414b2942f_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_543f1b3e_ec55_47b3_868d_73a263350281_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _a63e9d9c_70cf_41dd_b165_5c026e325b9b_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_bd07bce4_54e2_48da_b71a_65308788850f_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _3062d313_085a_4525_9924_8d15f54202f4_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

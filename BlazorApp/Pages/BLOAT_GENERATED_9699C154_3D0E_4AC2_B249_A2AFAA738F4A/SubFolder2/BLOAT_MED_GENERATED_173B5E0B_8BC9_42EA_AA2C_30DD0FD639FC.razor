@@ -1,0 +1,29 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_a4898344_47fc_4592_9384_81dc2fb0549c_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a1615934_db65_47d1_acad_b3f081a8340b_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a1615934_db65_47d1_acad_b3f081a8340b_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _a1615934_db65_47d1_acad_b3f081a8340b_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string GetAnchor_a4898344_47fc_4592_9384_81dc2fb0549c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _a1615934_db65_47d1_acad_b3f081a8340b_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

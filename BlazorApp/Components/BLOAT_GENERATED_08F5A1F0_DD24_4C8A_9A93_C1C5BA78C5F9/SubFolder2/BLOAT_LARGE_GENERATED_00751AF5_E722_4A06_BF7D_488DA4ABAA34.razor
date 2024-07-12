@@ -1,0 +1,70 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_40f25426_82f8_470f_96bd_70ccebe36802_Class())">
+	<div class="@(Get_78c40be5_4311_41b7_b6ba_0ed67e8b1638_Class())">
+		<p>This div is a test!</p>
+	</div>
+</div>
+@if (_d73c7950_81c1_4ce4_b7b8_7b97720214ff_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _d73c7950_81c1_4ce4_b7b8_7b97720214ff_buttonVisibilityTest = !_d73c7950_81c1_4ce4_b7b8_7b97720214ff_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_b192f635_879a_4676_a5a5_1f6a5d788225_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b192f635_879a_4676_a5a5_1f6a5d788225_buttonVisibilityTest = !_b192f635_879a_4676_a5a5_1f6a5d788225_buttonVisibilityTest"> 
+		<button>
+			This is a test button! 
+		</button>
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _4adbedf5_41bb_47e4_b003_d21576177a6b_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _4adbedf5_41bb_47e4_b003_d21576177a6b_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_72d24ca4_be5a_4b6f_b5a0_b3553cc37e64_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _d73c7950_81c1_4ce4_b7b8_7b97720214ff_buttonVisibilityTest;
+	private bool _b192f635_879a_4676_a5a5_1f6a5d788225_buttonVisibilityTest;
+	private string Get_78c40be5_4311_41b7_b6ba_0ed67e8b1638_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_40f25426_82f8_470f_96bd_70ccebe36802_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _4adbedf5_41bb_47e4_b003_d21576177a6b_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _72d24ca4_be5a_4b6f_b5a0_b3553cc37e64_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

@@ -1,0 +1,68 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _aef0614b_7c98_4283_8a29_77c1ec0a0d4e_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _aef0614b_7c98_4283_8a29_77c1ec0a0d4e_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _aef0614b_7c98_4283_8a29_77c1ec0a0d4e_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _aef0614b_7c98_4283_8a29_77c1ec0a0d4e_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_09afe353_018f_4113_94e2_bfec403d5a67_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _09afe353_018f_4113_94e2_bfec403d5a67_buttonVisibilityTest = !_09afe353_018f_4113_94e2_bfec403d5a67_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_c5fa74cc_1c85_425b_a920_f832f0d45648_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b7be9bfc_ac12_4732_9fbb_c1bdf7b31715_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _b7be9bfc_ac12_4732_9fbb_c1bdf7b31715_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _09afe353_018f_4113_94e2_bfec403d5a67_buttonVisibilityTest;
+	private string _aef0614b_7c98_4283_8a29_77c1ec0a0d4e_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _c5fa74cc_1c85_425b_a920_f832f0d45648_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_3a072cc5_d3fb_44b4_abbe_d8a34e6322b6_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _b7be9bfc_ac12_4732_9fbb_c1bdf7b31715_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

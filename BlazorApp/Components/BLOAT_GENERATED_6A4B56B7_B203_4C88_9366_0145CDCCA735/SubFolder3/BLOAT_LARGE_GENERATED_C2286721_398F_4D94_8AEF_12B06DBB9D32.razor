@@ -1,0 +1,116 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_89e559d9_da0b_4cb2_9b2e_4e8ef555636e_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_0fb28c9e_406c_41b1_9677_36c9309c82b6_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_d16790fc_dd03_4378_9168_35950ffbb9ce_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_4c44991d_59af_4546_9800_291414fb9b15_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_3b50be4a_0671_4643_8f99_fce22a4ec167_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3b50be4a_0671_4643_8f99_fce22a4ec167_buttonVisibilityTest = !_3b50be4a_0671_4643_8f99_fce22a4ec167_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_321aa8f5_52f2_4cb8_b7cf_4d27e0da507e_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_8e0ad957_0e80_4a92_9e02_b2667a8715e1_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	<button>
+		This is a test button! 
+	</button>
+</button>
+@code { 
+	private bool _3b50be4a_0671_4643_8f99_fce22a4ec167_buttonVisibilityTest;
+	private string _4b35b9d0_9fce_479c_aa35_29926bd58a85_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_89e559d9_da0b_4cb2_9b2e_4e8ef555636e_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_0fb28c9e_406c_41b1_9677_36c9309c82b6_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_d16790fc_dd03_4378_9168_35950ffbb9ce_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _4c44991d_59af_4546_9800_291414fb9b15_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _321aa8f5_52f2_4cb8_b7cf_4d27e0da507e_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _8e0ad957_0e80_4a92_9e02_b2667a8715e1_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

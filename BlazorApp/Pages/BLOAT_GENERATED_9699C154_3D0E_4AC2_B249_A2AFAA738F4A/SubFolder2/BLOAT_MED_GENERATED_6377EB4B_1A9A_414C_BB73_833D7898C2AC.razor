@@ -1,0 +1,66 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _84de7836_e73e_463e_9141_f27ffee2ebb0_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _84de7836_e73e_463e_9141_f27ffee2ebb0_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _84de7836_e73e_463e_9141_f27ffee2ebb0_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _84de7836_e73e_463e_9141_f27ffee2ebb0_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_10d130f4_398a_4b5e_b2ba_35a2d865311e_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _10d130f4_398a_4b5e_b2ba_35a2d865311e_buttonVisibilityTest = !_10d130f4_398a_4b5e_b2ba_35a2d865311e_buttonVisibilityTest"> 
+		<a href="#">
+			@(GetAnchor_dfa626e1_93e4_419d_8f93_fb6b57d0134a_Text())
+			<TelerikTabStrip> 
+				<TabStripTab> 
+					@{ var tabStrip0Data = _dc63456c_9633_4d29_b35d_dadc98b08089_GetTabStripData(); }
+					@tabStrip0Data
+				</TabStripTab> 
+				<TabStripTab> 
+					@{ var tabStrip1Data = _dc63456c_9633_4d29_b35d_dadc98b08089_GetTabStripData(); }
+					@tabStrip1Data
+				</TabStripTab> 
+			</TelerikTabStrip> 
+		</a>
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_6a3c9443_a089_4930_9ad7_b62fe44e4638_Text())
+	<div class="@(Get_1cf9ac1f_c4ed_4dc8_a2ed_47cd312a3e69_Class())">
+		<p>This div is a test!</p>
+	</div>
+</a>
+@code { 
+	private bool _10d130f4_398a_4b5e_b2ba_35a2d865311e_buttonVisibilityTest;
+	private string _84de7836_e73e_463e_9141_f27ffee2ebb0_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _dc63456c_9633_4d29_b35d_dadc98b08089_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_dfa626e1_93e4_419d_8f93_fb6b57d0134a_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_1cf9ac1f_c4ed_4dc8_a2ed_47cd312a3e69_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_6a3c9443_a089_4930_9ad7_b62fe44e4638_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

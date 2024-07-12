@@ -1,0 +1,187 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d423a85a_dd38_4e26_ad64_564900e7fd22_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d423a85a_dd38_4e26_ad64_564900e7fd22_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _d423a85a_dd38_4e26_ad64_564900e7fd22_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_408e8faf_2b90_4f8c_99a2_5fcbb3ffb529_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_4cf7be76_9ea8_4c4d_a7c0_9c0dd11d8b6e_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _4cf7be76_9ea8_4c4d_a7c0_9c0dd11d8b6e_buttonVisibilityTest = !_4cf7be76_9ea8_4c4d_a7c0_9c0dd11d8b6e_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+@if (_460c104a_fc9d_4c65_ae85_38d5bf6ccf93_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _460c104a_fc9d_4c65_ae85_38d5bf6ccf93_buttonVisibilityTest = !_460c104a_fc9d_4c65_ae85_38d5bf6ccf93_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d1301889_5641_4aab_b60c_7c1aa8e6c573_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d1301889_5641_4aab_b60c_7c1aa8e6c573_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _d1301889_5641_4aab_b60c_7c1aa8e6c573_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col5Row3
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5d0fd088_297d_4403_8590_28128ee5fd7c_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _5d0fd088_297d_4403_8590_28128ee5fd7c_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _4cf7be76_9ea8_4c4d_a7c0_9c0dd11d8b6e_buttonVisibilityTest;
+	private bool _460c104a_fc9d_4c65_ae85_38d5bf6ccf93_buttonVisibilityTest;
+	private string _d423a85a_dd38_4e26_ad64_564900e7fd22_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _408e8faf_2b90_4f8c_99a2_5fcbb3ffb529_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _d1301889_5641_4aab_b60c_7c1aa8e6c573_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _5d0fd088_297d_4403_8590_28128ee5fd7c_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

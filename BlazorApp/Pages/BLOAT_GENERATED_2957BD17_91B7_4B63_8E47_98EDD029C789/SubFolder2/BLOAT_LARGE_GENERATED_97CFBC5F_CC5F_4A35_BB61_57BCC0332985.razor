@@ -1,0 +1,59 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_8e15c094_fe5c_4a85_a579_8b754300ed11_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _8e15c094_fe5c_4a85_a579_8b754300ed11_buttonVisibilityTest = !_8e15c094_fe5c_4a85_a579_8b754300ed11_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_136d7ab6_6194_4da5_94a9_e89abbb62ea7_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _136d7ab6_6194_4da5_94a9_e89abbb62ea7_buttonVisibilityTest = !_136d7ab6_6194_4da5_94a9_e89abbb62ea7_buttonVisibilityTest"> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _2475149e_73d8_4af5_8c10_0d2c3dc7605d_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+			<TabStripTab> 
+				@{ var tabStrip1Data = _2475149e_73d8_4af5_8c10_0d2c3dc7605d_GetTabStripData(); }
+				@tabStrip1Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _8e15c094_fe5c_4a85_a579_8b754300ed11_buttonVisibilityTest;
+	private bool _136d7ab6_6194_4da5_94a9_e89abbb62ea7_buttonVisibilityTest;
+	private string _9d4b3441_41bb_4940_8771_0cda1cefc5a2_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _2475149e_73d8_4af5_8c10_0d2c3dc7605d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

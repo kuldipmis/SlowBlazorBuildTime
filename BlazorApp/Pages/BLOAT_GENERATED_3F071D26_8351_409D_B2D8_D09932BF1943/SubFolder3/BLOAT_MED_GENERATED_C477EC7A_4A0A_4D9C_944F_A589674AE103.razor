@@ -1,0 +1,58 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_6a044e51_00a5_4c15_8397_2c72eda23c9f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _148e4d14_369e_4163_9841_2e168b066d00_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _148e4d14_369e_4163_9841_2e168b066d00_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _148e4d14_369e_4163_9841_2e168b066d00_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_50e120ed_3332_430d_8502_8b82095c3550_GridOnRead"> 
+	<GridColumns> 
+		<div class="@(Get_13df3581_d76e_4d5b_98d0_be68ac8769a9_Class())">
+			<p>This div is a test!</p>
+		</div>
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string Get_6a044e51_00a5_4c15_8397_2c72eda23c9f_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _148e4d14_369e_4163_9841_2e168b066d00_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_13df3581_d76e_4d5b_98d0_be68ac8769a9_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _50e120ed_3332_430d_8502_8b82095c3550_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

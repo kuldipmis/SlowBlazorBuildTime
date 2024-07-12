@@ -1,0 +1,20 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+@if (_1311aa92_9163_47c2_92b9_00af18a70f3d_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1311aa92_9163_47c2_92b9_00af18a70f3d_buttonVisibilityTest = !_1311aa92_9163_47c2_92b9_00af18a70f3d_buttonVisibilityTest"> 
+		@if (_b65075cd_67b4_4977_9b5f_3e09f8e2805f_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _b65075cd_67b4_4977_9b5f_3e09f8e2805f_buttonVisibilityTest = !_b65075cd_67b4_4977_9b5f_3e09f8e2805f_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</TelerikButton> 
+}
+@code { 
+	private bool _b65075cd_67b4_4977_9b5f_3e09f8e2805f_buttonVisibilityTest;
+	private bool _1311aa92_9163_47c2_92b9_00af18a70f3d_buttonVisibilityTest;
+
+} 

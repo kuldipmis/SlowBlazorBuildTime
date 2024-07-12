@@ -1,0 +1,114 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_d14217a2_34ea_41f3_9e62_ff5ee721da10_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_877e8cb9_4ed5_477a_82b7_0d59aaa24705_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_d4a8d10b_f18b_48c1_ab64_780581b4bf80_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _ffd18420_7caa_4b66_864b_6a5e95cd41ab_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_ae4cc57b_74f4_4bd0_8dff_cf5004607cd3_Class())">
+	<div class="@(Get_3b89c001_cfa6_4454_b7e3_61c7fa1657c2_Class())">
+		<p>This div is a test!</p>
+	</div>
+</div>
+@if (_e1c2e3ca_26c0_4bee_9fa0_a58db17a00d3_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e1c2e3ca_26c0_4bee_9fa0_a58db17a00d3_buttonVisibilityTest = !_e1c2e3ca_26c0_4bee_9fa0_a58db17a00d3_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _257d67b7_c5b8_4691_bedc_1bea74d2dd1c_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _257d67b7_c5b8_4691_bedc_1bea74d2dd1c_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _257d67b7_c5b8_4691_bedc_1bea74d2dd1c_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _e1c2e3ca_26c0_4bee_9fa0_a58db17a00d3_buttonVisibilityTest;
+	private string Get_d14217a2_34ea_41f3_9e62_ff5ee721da10_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_877e8cb9_4ed5_477a_82b7_0d59aaa24705_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_d4a8d10b_f18b_48c1_ab64_780581b4bf80_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _ffd18420_7caa_4b66_864b_6a5e95cd41ab_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_3b89c001_cfa6_4454_b7e3_61c7fa1657c2_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_ae4cc57b_74f4_4bd0_8dff_cf5004607cd3_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _257d67b7_c5b8_4691_bedc_1bea74d2dd1c_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

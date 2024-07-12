@@ -1,0 +1,57 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_a8bee81d_33ae_4ab2_9050_36aabac25ba5_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_13c1c84e_3980_4ba2_b94e_8759e97120bd_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _13c1c84e_3980_4ba2_b94e_8759e97120bd_buttonVisibilityTest = !_13c1c84e_3980_4ba2_b94e_8759e97120bd_buttonVisibilityTest"> 
+		<table>
+			<tr>
+				<th>
+					Test Header 1
+				</th>
+				<th>
+					Test Header 2
+				</th>
+				<th>
+					Test Header 3
+				</th>
+			</tr>
+			<tr>
+				<td>
+					<a href="#">
+						@(GetAnchor_0aa978a2_8f5d_4d61_8bff_99a6efda355d_Text())
+					</a>
+				</td>
+				<td>
+					<a href="#">
+						@(GetAnchor_0aa978a2_8f5d_4d61_8bff_99a6efda355d_Text())
+					</a>
+				</td>
+				<td>
+					<a href="#">
+						@(GetAnchor_0aa978a2_8f5d_4d61_8bff_99a6efda355d_Text())
+					</a>
+				</td>
+			</tr>
+		</table>
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_5a6e1074_093c_44b9_b746_5db9b9bca56c_Text())
+</a>
+@code { 
+	private bool _13c1c84e_3980_4ba2_b94e_8759e97120bd_buttonVisibilityTest;
+	private string Get_a8bee81d_33ae_4ab2_9050_36aabac25ba5_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_0aa978a2_8f5d_4d61_8bff_99a6efda355d_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_5a6e1074_093c_44b9_b746_5db9b9bca56c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

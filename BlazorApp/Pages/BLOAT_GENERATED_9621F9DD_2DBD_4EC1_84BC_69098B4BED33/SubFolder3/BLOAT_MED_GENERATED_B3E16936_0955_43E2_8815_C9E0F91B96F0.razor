@@ -1,0 +1,58 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_0eeee2ea_ed8b_4abc_bb4c_9c0dc0493779_Text())
+</a>
+<a href="#">
+	@(GetAnchor_1b2795bb_1861_4ba8_ad3d_15d40bc9510b_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _dda968ca_a1ca_4fc6_bccf_90012a4876c4_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _dda968ca_a1ca_4fc6_bccf_90012a4876c4_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _dda968ca_a1ca_4fc6_bccf_90012a4876c4_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _ee5a5e99_69d5_42de_baaa_19a8e6863401_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+	</tr>
+</table>
+@code { 
+
+	private string GetAnchor_0eeee2ea_ed8b_4abc_bb4c_9c0dc0493779_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_1b2795bb_1861_4ba8_ad3d_15d40bc9510b_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _dda968ca_a1ca_4fc6_bccf_90012a4876c4_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _ee5a5e99_69d5_42de_baaa_19a8e6863401_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

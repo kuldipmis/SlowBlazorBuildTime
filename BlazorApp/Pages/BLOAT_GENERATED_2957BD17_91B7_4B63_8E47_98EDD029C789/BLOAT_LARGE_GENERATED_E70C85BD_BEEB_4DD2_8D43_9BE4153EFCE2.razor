@@ -1,0 +1,62 @@
+@using Telerik.Blazor.Components;
+@if (_6a027b4a_a814_4548_80d1_4dfcfeac69ee_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _6a027b4a_a814_4548_80d1_4dfcfeac69ee_buttonVisibilityTest = !_6a027b4a_a814_4548_80d1_4dfcfeac69ee_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _59e1d911_0658_47a5_8321_c08a2506594d_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _05b5a15e_a15e_4e55_8328_1591341aae1d_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _05b5a15e_a15e_4e55_8328_1591341aae1d_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d941e6b6_aa35_4087_a86d_2cb1317fc175_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_bb0909d3_64a4_4251_8140_948fda39d6c8_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _6a027b4a_a814_4548_80d1_4dfcfeac69ee_buttonVisibilityTest;
+	private string _59e1d911_0658_47a5_8321_c08a2506594d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _05b5a15e_a15e_4e55_8328_1591341aae1d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _d941e6b6_aa35_4087_a86d_2cb1317fc175_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _bb0909d3_64a4_4251_8140_948fda39d6c8_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

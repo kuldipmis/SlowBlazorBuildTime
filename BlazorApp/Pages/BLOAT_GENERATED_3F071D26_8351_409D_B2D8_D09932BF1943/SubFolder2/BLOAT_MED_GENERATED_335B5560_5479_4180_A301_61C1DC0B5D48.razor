@@ -1,0 +1,42 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_5517a406_aaf3_40af_bdad_d9754da542ad_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_df1ef690_17d6_4f7a_9318_e091e802e8ee_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_7507b04a_519e_44f8_886d_b577ee29baf9_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _7507b04a_519e_44f8_886d_b577ee29baf9_buttonVisibilityTest = !_7507b04a_519e_44f8_886d_b577ee29baf9_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_280b1c67_b1a9_44f4_917c_7dc7ad7c6a05_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _7507b04a_519e_44f8_886d_b577ee29baf9_buttonVisibilityTest;
+	private string Get_5517a406_aaf3_40af_bdad_d9754da542ad_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_df1ef690_17d6_4f7a_9318_e091e802e8ee_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _280b1c67_b1a9_44f4_917c_7dc7ad7c6a05_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

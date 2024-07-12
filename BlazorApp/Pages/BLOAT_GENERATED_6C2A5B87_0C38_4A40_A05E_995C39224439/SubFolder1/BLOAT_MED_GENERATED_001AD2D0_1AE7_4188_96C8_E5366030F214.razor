@@ -1,0 +1,113 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b9a62fe8_8855_4412_852f_469804a24d87_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_0a9bbe9c_535b_4191_bb46_ebb5af53f992_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+	</tr>
+</table>
+<div class="@(Get_091be168_596d_4ef5_ae9e_feacb8ad5499_Class())">
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+			<td>
+				Col1Row2
+			</td>
+			<td>
+				Col2Row2
+			</td>
+			<td>
+				Col1Row3
+			</td>
+			<td>
+				Col2Row3
+			</td>
+			<td>
+				Col1Row4
+			</td>
+			<td>
+				Col2Row4
+			</td>
+			<td>
+				Col1Row5
+			</td>
+			<td>
+				Col2Row5
+			</td>
+		</tr>
+	</table>
+</div>
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string _b9a62fe8_8855_4412_852f_469804a24d87_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _0a9bbe9c_535b_4191_bb46_ebb5af53f992_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_091be168_596d_4ef5_ae9e_feacb8ad5499_Class()
+	{
+		return "alert alert-info";
+	}
+} 

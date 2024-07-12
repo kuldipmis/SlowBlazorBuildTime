@@ -1,0 +1,141 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _6a1e7a6c_25e0_4fe3_b970_ee865e73ebff_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _6a1e7a6c_25e0_4fe3_b970_ee865e73ebff_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _6a1e7a6c_25e0_4fe3_b970_ee865e73ebff_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _6a1e7a6c_25e0_4fe3_b970_ee865e73ebff_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+		<td>
+			Col2Row5
+		</td>
+		<td>
+			Col3Row5
+		</td>
+	</tr>
+</table>
+@if (_c07d4366_6a4e_419c_be80_e57b5c5f2ab6_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _c07d4366_6a4e_419c_be80_e57b5c5f2ab6_buttonVisibilityTest = !_c07d4366_6a4e_419c_be80_e57b5c5f2ab6_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_b396abb6_6579_4d25_8844_ca0a8cc5e279_Text())
+</a>
+@code { 
+	private bool _c07d4366_6a4e_419c_be80_e57b5c5f2ab6_buttonVisibilityTest;
+	private string _6a1e7a6c_25e0_4fe3_b970_ee865e73ebff_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_b396abb6_6579_4d25_8844_ca0a8cc5e279_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

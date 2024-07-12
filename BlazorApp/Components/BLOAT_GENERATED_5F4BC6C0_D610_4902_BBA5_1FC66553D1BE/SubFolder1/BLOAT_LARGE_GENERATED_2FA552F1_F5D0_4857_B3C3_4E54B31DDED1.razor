@@ -1,0 +1,52 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_df559231_29d0_445b_9170_aab2f0e4d918_Text())
+</a>
+<a href="#">
+	@(GetAnchor_58c1dd2c_e41b_441e_a3fe_b8cb3f4d1ca1_Text())
+</a>
+<div class="@(Get_579bcf38_435f_4b57_8b5c_5ffdad27fd0c_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_3f9f81c6_cba2_4f8b_94df_49e2054add6c_Class())">
+	<p>This div is a test!</p>
+</div>
+<button>
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _684d0d27_68bb_48a6_ad6b_d0210899b069_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _684d0d27_68bb_48a6_ad6b_d0210899b069_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _684d0d27_68bb_48a6_ad6b_d0210899b069_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</button>
+@code { 
+
+	private string GetAnchor_df559231_29d0_445b_9170_aab2f0e4d918_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_58c1dd2c_e41b_441e_a3fe_b8cb3f4d1ca1_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_579bcf38_435f_4b57_8b5c_5ffdad27fd0c_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_3f9f81c6_cba2_4f8b_94df_49e2054add6c_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _684d0d27_68bb_48a6_ad6b_d0210899b069_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

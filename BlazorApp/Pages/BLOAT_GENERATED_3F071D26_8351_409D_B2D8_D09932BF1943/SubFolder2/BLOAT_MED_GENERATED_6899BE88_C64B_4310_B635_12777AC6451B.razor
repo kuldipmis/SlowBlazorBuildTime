@@ -1,0 +1,77 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_d52c83c9_9907_41f6_bbc5_fa734e5808cf_Class())">
+	<p>This div is a test!</p>
+</div>
+<a href="#">
+	@(GetAnchor_0a0ec357_0bc6_4e0b_9106_09dcd35018d5_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a9d33026_e298_4b2a_b21f_34934f4ce0b6_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a9d33026_e298_4b2a_b21f_34934f4ce0b6_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_d52c83c9_9907_41f6_bbc5_fa734e5808cf_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_0a0ec357_0bc6_4e0b_9106_09dcd35018d5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _a9d33026_e298_4b2a_b21f_34934f4ce0b6_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

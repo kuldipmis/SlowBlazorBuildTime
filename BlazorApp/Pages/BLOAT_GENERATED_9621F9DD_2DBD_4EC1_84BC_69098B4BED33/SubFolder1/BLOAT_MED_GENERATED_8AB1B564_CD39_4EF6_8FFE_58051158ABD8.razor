@@ -1,0 +1,49 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_9608e73c_82b5_4bad_b78b_3159c42f070d_Text())
+</a>
+@if (_aa2e5527_97cd_438c_a1ee_f6f99c0ea92a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _aa2e5527_97cd_438c_a1ee_f6f99c0ea92a_buttonVisibilityTest = !_aa2e5527_97cd_438c_a1ee_f6f99c0ea92a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_9b6b1039_594f_452a_898f_375eca7cd9fc_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _9b6b1039_594f_452a_898f_375eca7cd9fc_buttonVisibilityTest = !_9b6b1039_594f_452a_898f_375eca7cd9fc_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_59e96eb9_63f5_4937_9aa4_3de549f3bc0f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_33e57bb0_24e9_4454_8d57_cc0875397fcc_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _aa2e5527_97cd_438c_a1ee_f6f99c0ea92a_buttonVisibilityTest;
+	private bool _9b6b1039_594f_452a_898f_375eca7cd9fc_buttonVisibilityTest;
+	private string GetAnchor_9608e73c_82b5_4bad_b78b_3159c42f070d_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_59e96eb9_63f5_4937_9aa4_3de549f3bc0f_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _33e57bb0_24e9_4454_8d57_cc0875397fcc_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

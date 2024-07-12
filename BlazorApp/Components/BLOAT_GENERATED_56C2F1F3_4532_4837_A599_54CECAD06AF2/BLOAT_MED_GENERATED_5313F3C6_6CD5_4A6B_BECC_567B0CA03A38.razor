@@ -1,0 +1,57 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _4f503478_af82_4c19_89b4_0d5e8de81baf_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _4f503478_af82_4c19_89b4_0d5e8de81baf_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _4f503478_af82_4c19_89b4_0d5e8de81baf_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _3f59e902_ac17_4673_b01f_255bc3f01518_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_a1f42ff3_3a2f_4f32_9e58_b9a93d8eabd3_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_e5233123_ffef_4a49_b4b4_36238d9633aa_Text())
+</a>
+@code { 
+
+	private string _4f503478_af82_4c19_89b4_0d5e8de81baf_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _3f59e902_ac17_4673_b01f_255bc3f01518_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _a1f42ff3_3a2f_4f32_9e58_b9a93d8eabd3_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_e5233123_ffef_4a49_b4b4_36238d9633aa_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

@@ -1,0 +1,120 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_a2723f2f_6248_4052_bbb9_25ec81f8c706_Text())
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _1d8dc740_de09_42b2_81da_340493edb662_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _1d8dc740_de09_42b2_81da_340493edb662_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _1d8dc740_de09_42b2_81da_340493edb662_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</a>
+@if (_d6ccce41_f632_43aa_b380_118368b99246_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _d6ccce41_f632_43aa_b380_118368b99246_buttonVisibilityTest = !_d6ccce41_f632_43aa_b380_118368b99246_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col5Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+		<td>
+			Col4Row4
+		</td>
+		<td>
+			Col5Row4
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _d6ccce41_f632_43aa_b380_118368b99246_buttonVisibilityTest;
+	private string Get_9c222aa0_fa91_4230_9178_ccd3d62d3205_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _1d8dc740_de09_42b2_81da_340493edb662_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_a2723f2f_6248_4052_bbb9_25ec81f8c706_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

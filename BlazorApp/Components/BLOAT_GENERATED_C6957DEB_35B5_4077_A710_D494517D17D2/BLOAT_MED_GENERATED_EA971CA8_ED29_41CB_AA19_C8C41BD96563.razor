@@ -1,0 +1,103 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _82c7b1c2_1e93_4d72_901f_adb82b415d01_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _82c7b1c2_1e93_4d72_901f_adb82b415d01_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _82c7b1c2_1e93_4d72_901f_adb82b415d01_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_35af5314_8840_48fc_9cd5_91744887e0fc_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _35af5314_8840_48fc_9cd5_91744887e0fc_buttonVisibilityTest = !_35af5314_8840_48fc_9cd5_91744887e0fc_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_39403b67_04d4_4180_82a4_08606a78d013_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _39403b67_04d4_4180_82a4_08606a78d013_buttonVisibilityTest = !_39403b67_04d4_4180_82a4_08606a78d013_buttonVisibilityTest"> 
+		<table>
+			<tr>
+				<th>
+					Test Header 1
+				</th>
+				<th>
+					Test Header 2
+				</th>
+				<th>
+					Test Header 3
+				</th>
+				<th>
+					Test Header 4
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Col1Row1
+				</td>
+				<td>
+					Col2Row1
+				</td>
+				<td>
+					Col3Row1
+				</td>
+				<td>
+					Col4Row1
+				</td>
+				<td>
+					Col1Row2
+				</td>
+				<td>
+					Col2Row2
+				</td>
+				<td>
+					Col3Row2
+				</td>
+				<td>
+					Col4Row2
+				</td>
+				<td>
+					Col1Row3
+				</td>
+				<td>
+					Col2Row3
+				</td>
+				<td>
+					Col3Row3
+				</td>
+				<td>
+					Col4Row3
+				</td>
+				<td>
+					Col1Row4
+				</td>
+				<td>
+					Col2Row4
+				</td>
+				<td>
+					Col3Row4
+				</td>
+				<td>
+					Col4Row4
+				</td>
+			</tr>
+		</table>
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _35af5314_8840_48fc_9cd5_91744887e0fc_buttonVisibilityTest;
+	private bool _39403b67_04d4_4180_82a4_08606a78d013_buttonVisibilityTest;
+	private string _82c7b1c2_1e93_4d72_901f_adb82b415d01_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

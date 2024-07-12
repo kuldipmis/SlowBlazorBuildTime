@@ -1,0 +1,70 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_abeb0605_bec6_43a2_bef5_35b29bd66a7f_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_882270d8_9aec_4a79_8c39_a0ff9d09f322_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _7be93983_4ba3_452c_a68a_8642a97996c5_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _7be93983_4ba3_452c_a68a_8642a97996c5_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a197ea9b_e926_422e_b698_045938d40669_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a197ea9b_e926_422e_b698_045938d40669_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_0185552d_1d63_4a56_8505_18824e8b45a6_Class())">
+	<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_301ac484_40df_4dc3_b7fa_9897aadcdb7a_GridOnRead"> 
+		<GridColumns> 
+			<GridColumn Field="Item1" Title="TestColumn1"/> 
+			<GridColumn Field="Item2" Title="TestColumn2"/> 
+		</GridColumns> 
+	</TelerikGrid> 
+</div>
+@code { 
+
+	private string Get_abeb0605_bec6_43a2_bef5_35b29bd66a7f_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_882270d8_9aec_4a79_8c39_a0ff9d09f322_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _7be93983_4ba3_452c_a68a_8642a97996c5_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _a197ea9b_e926_422e_b698_045938d40669_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _301ac484_40df_4dc3_b7fa_9897aadcdb7a_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_0185552d_1d63_4a56_8505_18824e8b45a6_Class()
+	{
+		return "alert alert-info";
+	}
+} 

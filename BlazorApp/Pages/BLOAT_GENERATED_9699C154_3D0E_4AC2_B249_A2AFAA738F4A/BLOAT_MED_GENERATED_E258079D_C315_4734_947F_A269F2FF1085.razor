@@ -1,0 +1,63 @@
+
+<a href="#">
+	@(GetAnchor_56466f60_4beb_4933_a9d7_f3195d874b22_Text())
+	<button>
+		This is a test button! 
+	</button>
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+	</tr>
+</table>
+<div class="@(Get_db178def_e2bb_4183_b208_7b41b7bddd8c_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+
+	private string GetAnchor_56466f60_4beb_4933_a9d7_f3195d874b22_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_db178def_e2bb_4183_b208_7b41b7bddd8c_Class()
+	{
+		return "alert alert-info";
+	}
+} 

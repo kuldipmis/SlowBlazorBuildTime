@@ -1,0 +1,145 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_8bfcec6c_7d75_485f_818b_f05453df077c_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _17100956_d3ef_49e5_8b82_7e10d22e0281_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _17100956_d3ef_49e5_8b82_7e10d22e0281_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _17100956_d3ef_49e5_8b82_7e10d22e0281_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_5c8c06d7_ca9a_4251_825e_47cbd8a46ef6_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5c8c06d7_ca9a_4251_825e_47cbd8a46ef6_buttonVisibilityTest = !_5c8c06d7_ca9a_4251_825e_47cbd8a46ef6_buttonVisibilityTest"> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _d73ed70d_c1d5_47b9_94ad_518bb50fdfca_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+			<TabStripTab> 
+				@{ var tabStrip1Data = _d73ed70d_c1d5_47b9_94ad_518bb50fdfca_GetTabStripData(); }
+				@tabStrip1Data
+			</TabStripTab> 
+			<TabStripTab> 
+				@{ var tabStrip2Data = _d73ed70d_c1d5_47b9_94ad_518bb50fdfca_GetTabStripData(); }
+				@tabStrip2Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_82faf50c_6d5e_4557_ae7f_c8a669e6c62a_GridOnRead"> 
+	<GridColumns> 
+		@if (_cf0eb166_ed2d_46d3_b04e_359770d11291_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _cf0eb166_ed2d_46d3_b04e_359770d11291_buttonVisibilityTest = !_cf0eb166_ed2d_46d3_b04e_359770d11291_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_b26e104c_9b37_4f5b_8d4c_3830e6fb832c_Text())
+</a>
+<button>
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+			<td>
+				Col1Row2
+			</td>
+			<td>
+				Col2Row2
+			</td>
+			<td>
+				Col1Row3
+			</td>
+			<td>
+				Col2Row3
+			</td>
+			<td>
+				Col1Row4
+			</td>
+			<td>
+				Col2Row4
+			</td>
+		</tr>
+	</table>
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_8093f5dd_7364_48be_b463_008bda73dd86_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_3866c1fd_3fb8_439a_8574_844ffc097312_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3866c1fd_3fb8_439a_8574_844ffc097312_buttonVisibilityTest = !_3866c1fd_3fb8_439a_8574_844ffc097312_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _5c8c06d7_ca9a_4251_825e_47cbd8a46ef6_buttonVisibilityTest;
+	private bool _cf0eb166_ed2d_46d3_b04e_359770d11291_buttonVisibilityTest;
+	private bool _3866c1fd_3fb8_439a_8574_844ffc097312_buttonVisibilityTest;
+	private string Get_8bfcec6c_7d75_485f_818b_f05453df077c_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _17100956_d3ef_49e5_8b82_7e10d22e0281_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _d73ed70d_c1d5_47b9_94ad_518bb50fdfca_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _82faf50c_6d5e_4557_ae7f_c8a669e6c62a_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_b26e104c_9b37_4f5b_8d4c_3830e6fb832c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _8093f5dd_7364_48be_b463_008bda73dd86_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

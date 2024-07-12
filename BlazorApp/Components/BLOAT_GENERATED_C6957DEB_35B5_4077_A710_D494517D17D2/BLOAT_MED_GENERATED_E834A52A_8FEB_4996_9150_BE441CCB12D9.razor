@@ -1,0 +1,45 @@
+@using Telerik.Blazor.Components;
+@if (_f2cb8433_7097_4178_a13a_0ace23eb126f_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _f2cb8433_7097_4178_a13a_0ace23eb126f_buttonVisibilityTest = !_f2cb8433_7097_4178_a13a_0ace23eb126f_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _84582fc0_09eb_4610_a481_f02a2b4be711_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _28a75a32_42e0_4e31_954c_35399c0a1906_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _28a75a32_42e0_4e31_954c_35399c0a1906_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _28a75a32_42e0_4e31_954c_35399c0a1906_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _28a75a32_42e0_4e31_954c_35399c0a1906_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _f2cb8433_7097_4178_a13a_0ace23eb126f_buttonVisibilityTest;
+	private string _84582fc0_09eb_4610_a481_f02a2b4be711_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _28a75a32_42e0_4e31_954c_35399c0a1906_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,68 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_1e0cb860_db42_4313_aea5_adc10c9110bd_Text())
+	<button>
+		This is a test button! 
+	</button>
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a15cae0d_8db2_4b43_97a1_aeb0e2483d7f_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a15cae0d_8db2_4b43_97a1_aeb0e2483d7f_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _6ffc1229_3960_4260_a2da_58f8e7096796_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_c14eb6a9_7882_4f89_8d67_8b616d1cf849_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_7244fa39_579b_4513_bf70_9aa155dcfa29_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _7244fa39_579b_4513_bf70_9aa155dcfa29_buttonVisibilityTest = !_7244fa39_579b_4513_bf70_9aa155dcfa29_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_57eca99e_2e3c_4151_aeab_93a671506bdb_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_ff71b18d_ec70_447c_b0d3_a1ad8eb2985f_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ff71b18d_ec70_447c_b0d3_a1ad8eb2985f_buttonVisibilityTest = !_ff71b18d_ec70_447c_b0d3_a1ad8eb2985f_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _7244fa39_579b_4513_bf70_9aa155dcfa29_buttonVisibilityTest;
+	private bool _ff71b18d_ec70_447c_b0d3_a1ad8eb2985f_buttonVisibilityTest;
+	private string GetAnchor_1e0cb860_db42_4313_aea5_adc10c9110bd_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _a15cae0d_8db2_4b43_97a1_aeb0e2483d7f_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _6ffc1229_3960_4260_a2da_58f8e7096796_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_c14eb6a9_7882_4f89_8d67_8b616d1cf849_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_57eca99e_2e3c_4151_aeab_93a671506bdb_Class()
+	{
+		return "alert alert-info";
+	}
+} 

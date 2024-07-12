@@ -1,0 +1,59 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_00afcbb4_a7a0_44f7_b3bc_08b7e9d429ff_Class())">
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _11f16b6c_a213_4a39_8575_a14ef5b3d9b2_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _11f16b6c_a213_4a39_8575_a14ef5b3d9b2_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _11f16b6c_a213_4a39_8575_a14ef5b3d9b2_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</div>
+@if (_3cadabac_8fd0_467c_978b_ac676fedbbb4_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _3cadabac_8fd0_467c_978b_ac676fedbbb4_buttonVisibilityTest = !_3cadabac_8fd0_467c_978b_ac676fedbbb4_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_0251ba97_8ca0_40df_afe2_ce4c66de34b3_Text())
+	<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_944640d1_6402_4f0c_85e1_fcd72057e718_GridOnRead"> 
+		<GridColumns> 
+			<GridColumn Field="Item1" Title="TestColumn1"/> 
+			<GridColumn Field="Item2" Title="TestColumn2"/> 
+		</GridColumns> 
+	</TelerikGrid> 
+</a>
+@code { 
+	private bool _3cadabac_8fd0_467c_978b_ac676fedbbb4_buttonVisibilityTest;
+	private string _11f16b6c_a213_4a39_8575_a14ef5b3d9b2_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_00afcbb4_a7a0_44f7_b3bc_08b7e9d429ff_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _944640d1_6402_4f0c_85e1_fcd72057e718_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_0251ba97_8ca0_40df_afe2_ce4c66de34b3_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

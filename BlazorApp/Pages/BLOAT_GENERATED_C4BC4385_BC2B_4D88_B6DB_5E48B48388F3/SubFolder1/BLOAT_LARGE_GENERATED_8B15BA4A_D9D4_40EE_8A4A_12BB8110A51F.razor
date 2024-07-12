@@ -1,0 +1,239 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b083fd80_b30c_4d57_81e4_032087a87c09_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _b083fd80_b30c_4d57_81e4_032087a87c09_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_112bcd0a_ae39_4729_a61b_f00d5abeb632_Class())">
+	<p>This div is a test!</p>
+</div>
+<button>
+	This is a test button! 
+</button>
+<button>
+	<button>
+		This is a test button! 
+	</button>
+</button>
+<div class="@(Get_6db292a7_97ba_43a7_8219_9065cb44d22e_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+	</tr>
+</table>
+@if (_83bfeb26_8fdd_4d86_aa85_c1d766ea99c4_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _83bfeb26_8fdd_4d86_aa85_c1d766ea99c4_buttonVisibilityTest = !_83bfeb26_8fdd_4d86_aa85_c1d766ea99c4_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _340b1376_5ad3_4842_9694_f79a6793e053_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _340b1376_5ad3_4842_9694_f79a6793e053_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _340b1376_5ad3_4842_9694_f79a6793e053_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _340b1376_5ad3_4842_9694_f79a6793e053_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _83bfeb26_8fdd_4d86_aa85_c1d766ea99c4_buttonVisibilityTest;
+	private string _b083fd80_b30c_4d57_81e4_032087a87c09_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_112bcd0a_ae39_4729_a61b_f00d5abeb632_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_6db292a7_97ba_43a7_8219_9065cb44d22e_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _340b1376_5ad3_4842_9694_f79a6793e053_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

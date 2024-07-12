@@ -1,0 +1,42 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_872072a9_cf85_4dab_9210_bffa529155cd_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _872072a9_cf85_4dab_9210_bffa529155cd_buttonVisibilityTest = !_872072a9_cf85_4dab_9210_bffa529155cd_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _872072a9_cf85_4dab_9210_bffa529155cd_buttonVisibilityTest;
+	private string _9291ace7_0872_422c_a320_27ca70257e0c_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

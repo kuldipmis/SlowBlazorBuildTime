@@ -1,0 +1,78 @@
+@using Telerik.Blazor.Components;
+@if (_675bf8a0_1fa1_497d_96bc_c6ec293fcf39_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _675bf8a0_1fa1_497d_96bc_c6ec293fcf39_buttonVisibilityTest = !_675bf8a0_1fa1_497d_96bc_c6ec293fcf39_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _50a5f6ef_9425_49ad_a1a3_321a20e53c38_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _50a5f6ef_9425_49ad_a1a3_321a20e53c38_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _50a5f6ef_9425_49ad_a1a3_321a20e53c38_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="@(Get_68f8c9fa_3e50_45a9_84bd_2d5b3903213c_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_68f8c9fa_3e50_45a9_84bd_2d5b3903213c_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _78045fda_a354_4d01_bd7d_2082d7e39524_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _78045fda_a354_4d01_bd7d_2082d7e39524_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _78045fda_a354_4d01_bd7d_2082d7e39524_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _78045fda_a354_4d01_bd7d_2082d7e39524_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _675bf8a0_1fa1_497d_96bc_c6ec293fcf39_buttonVisibilityTest;
+	private string _50a5f6ef_9425_49ad_a1a3_321a20e53c38_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_68f8c9fa_3e50_45a9_84bd_2d5b3903213c_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _78045fda_a354_4d01_bd7d_2082d7e39524_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

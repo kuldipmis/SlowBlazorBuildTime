@@ -1,0 +1,114 @@
+@using Telerik.Blazor.Components;
+@if (_87560cc0_e170_48a3_b953_fdf6569f10d6_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _87560cc0_e170_48a3_b953_fdf6569f10d6_buttonVisibilityTest = !_87560cc0_e170_48a3_b953_fdf6569f10d6_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _3b36e358_d617_4d10_9b92_8acecfb71086_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _3b36e358_d617_4d10_9b92_8acecfb71086_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col5Row3
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f24907ee_221d_4e51_8125_20520dc820ba_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _85fe3cb3_51ef_4ed0_bdc7_f0b7dfc6baf7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _85fe3cb3_51ef_4ed0_bdc7_f0b7dfc6baf7_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _87560cc0_e170_48a3_b953_fdf6569f10d6_buttonVisibilityTest;
+	private string _3b36e358_d617_4d10_9b92_8acecfb71086_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _f24907ee_221d_4e51_8125_20520dc820ba_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _85fe3cb3_51ef_4ed0_bdc7_f0b7dfc6baf7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

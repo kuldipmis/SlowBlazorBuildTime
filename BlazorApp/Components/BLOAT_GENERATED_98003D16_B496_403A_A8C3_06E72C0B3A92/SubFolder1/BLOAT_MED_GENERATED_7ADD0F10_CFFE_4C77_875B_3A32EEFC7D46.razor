@@ -1,0 +1,40 @@
+@using Telerik.Blazor.Components;
+@if (_4e49b144_4a35_4303_b43e_1258b1de1d12_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _4e49b144_4a35_4303_b43e_1258b1de1d12_buttonVisibilityTest = !_4e49b144_4a35_4303_b43e_1258b1de1d12_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_ebc5c402_c198_4efa_b306_4d5359f23c0b_Text())
+</a>
+@if (_06fb5666_8b3a_4204_860b_a26ba8ac81f9_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _06fb5666_8b3a_4204_860b_a26ba8ac81f9_buttonVisibilityTest = !_06fb5666_8b3a_4204_860b_a26ba8ac81f9_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_c30aa0af_8429_45d9_9c44_f36119b295d8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _c30aa0af_8429_45d9_9c44_f36119b295d8_buttonVisibilityTest = !_c30aa0af_8429_45d9_9c44_f36119b295d8_buttonVisibilityTest"> 
+		<a href="#">
+			@(GetAnchor_a862df9b_54cb_4b51_92b1_d5fd61bcfdd5_Text())
+		</a>
+	</TelerikButton> 
+}
+@code { 
+	private bool _4e49b144_4a35_4303_b43e_1258b1de1d12_buttonVisibilityTest;
+	private bool _06fb5666_8b3a_4204_860b_a26ba8ac81f9_buttonVisibilityTest;
+	private bool _c30aa0af_8429_45d9_9c44_f36119b295d8_buttonVisibilityTest;
+	private string GetAnchor_ebc5c402_c198_4efa_b306_4d5359f23c0b_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_a862df9b_54cb_4b51_92b1_d5fd61bcfdd5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

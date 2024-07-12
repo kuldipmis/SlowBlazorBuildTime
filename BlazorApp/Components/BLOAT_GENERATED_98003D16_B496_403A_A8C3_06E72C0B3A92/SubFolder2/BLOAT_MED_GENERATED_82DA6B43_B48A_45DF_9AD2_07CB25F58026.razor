@@ -1,0 +1,57 @@
+@using Telerik.Blazor.Components;
+@if (_319d5b2d_6d9e_418f_9f92_7f76f6de4baf_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _319d5b2d_6d9e_418f_9f92_7f76f6de4baf_buttonVisibilityTest = !_319d5b2d_6d9e_418f_9f92_7f76f6de4baf_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<TelerikTabStrip> 
+				<TabStripTab> 
+					@{ var tabStrip0Data = _2c409d77_0be4_4763_ad17_ffa4e6d65c22_GetTabStripData(); }
+					@tabStrip0Data
+				</TabStripTab> 
+				<TabStripTab> 
+					@{ var tabStrip1Data = _2c409d77_0be4_4763_ad17_ffa4e6d65c22_GetTabStripData(); }
+					@tabStrip1Data
+				</TabStripTab> 
+			</TelerikTabStrip> 
+		</td>
+		<td>
+			<TelerikTabStrip> 
+				<TabStripTab> 
+					@{ var tabStrip0Data = _2c409d77_0be4_4763_ad17_ffa4e6d65c22_GetTabStripData(); }
+					@tabStrip0Data
+				</TabStripTab> 
+				<TabStripTab> 
+					@{ var tabStrip1Data = _2c409d77_0be4_4763_ad17_ffa4e6d65c22_GetTabStripData(); }
+					@tabStrip1Data
+				</TabStripTab> 
+			</TelerikTabStrip> 
+		</td>
+	</tr>
+</table>
+<div class="@(Get_5fa2383e_0b31_44f5_a85a_1d89fc0592cd_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _319d5b2d_6d9e_418f_9f92_7f76f6de4baf_buttonVisibilityTest;
+	private string _2c409d77_0be4_4763_ad17_ffa4e6d65c22_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_5fa2383e_0b31_44f5_a85a_1d89fc0592cd_Class()
+	{
+		return "alert alert-info";
+	}
+} 

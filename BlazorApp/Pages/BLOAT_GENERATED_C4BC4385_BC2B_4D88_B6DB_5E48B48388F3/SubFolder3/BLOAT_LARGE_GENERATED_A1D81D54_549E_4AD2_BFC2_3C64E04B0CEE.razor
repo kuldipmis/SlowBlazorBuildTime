@@ -1,0 +1,128 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_2226ac26_b031_451b_9c76_db6889263efd_Text())
+</a>
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+		<td>
+			Col4Row4
+		</td>
+	</tr>
+</table>
+@if (_355cd0ba_d8be_44c9_a9e3_da34b7f77d88_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _355cd0ba_d8be_44c9_a9e3_da34b7f77d88_buttonVisibilityTest = !_355cd0ba_d8be_44c9_a9e3_da34b7f77d88_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_4aeff808_2bd5_4a1b_b888_4aeded380c0c_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_31e550df_29cb_4596_af05_b51565353c7c_Text())
+</a>
+<a href="#">
+	@(GetAnchor_b5f53bf2_f13d_4f76_bc77_91923a22f1aa_Text())
+</a>
+@if (_85e48756_4b4d_413a_9948_12655b6c8549_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _85e48756_4b4d_413a_9948_12655b6c8549_buttonVisibilityTest = !_85e48756_4b4d_413a_9948_12655b6c8549_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _355cd0ba_d8be_44c9_a9e3_da34b7f77d88_buttonVisibilityTest;
+	private bool _85e48756_4b4d_413a_9948_12655b6c8549_buttonVisibilityTest;
+	private string GetAnchor_2226ac26_b031_451b_9c76_db6889263efd_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _4aeff808_2bd5_4a1b_b888_4aeded380c0c_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_31e550df_29cb_4596_af05_b51565353c7c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_b5f53bf2_f13d_4f76_bc77_91923a22f1aa_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

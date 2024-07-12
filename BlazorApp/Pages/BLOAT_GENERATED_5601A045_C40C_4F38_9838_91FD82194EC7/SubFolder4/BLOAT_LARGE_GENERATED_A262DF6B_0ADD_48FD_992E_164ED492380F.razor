@@ -1,0 +1,451 @@
+@using Telerik.Blazor.Components;
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _b56de185_1de7_4dd1_9520_b7a7ad84fad7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _b56de185_1de7_4dd1_9520_b7a7ad84fad7_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _b56de185_1de7_4dd1_9520_b7a7ad84fad7_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_6c8835c6_77d4_4382_8c8f_8c8bdd5875e1_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _6c8835c6_77d4_4382_8c8f_8c8bdd5875e1_buttonVisibilityTest = !_6c8835c6_77d4_4382_8c8f_8c8bdd5875e1_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_9b2d3686_778f_4bd9_80ee_f45802b634de_Class())">
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+			<th>
+				Test Header 3
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<TelerikTabStrip> 
+					<TabStripTab> 
+						@{ var tabStrip0Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip0Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip1Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip1Data
+					</TabStripTab> 
+				</TelerikTabStrip> 
+			</td>
+			<td>
+				<TelerikTabStrip> 
+					<TabStripTab> 
+						@{ var tabStrip0Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip0Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip1Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip1Data
+					</TabStripTab> 
+				</TelerikTabStrip> 
+			</td>
+			<td>
+				<TelerikTabStrip> 
+					<TabStripTab> 
+						@{ var tabStrip0Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip0Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip1Data = _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData(); }
+						@tabStrip1Data
+					</TabStripTab> 
+				</TelerikTabStrip> 
+			</td>
+		</tr>
+	</table>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_0a36b9d9_35a0_4933_b8c3_ce8845cb80e3_GridOnRead"> 
+	<GridColumns> 
+		<a href="#">
+			@(GetAnchor_a6a15645_3138_44ca_96ed_f031a46e46ab_Text())
+		</a>
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="@(Get_70bef5a2_7dba_4d7f_91b6_84d3c3990d80_Class())">
+				<table>
+					<tr>
+						<th>
+							Test Header 1
+						</th>
+						<th>
+							Test Header 2
+						</th>
+						<th>
+							Test Header 3
+						</th>
+						<th>
+							Test Header 4
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Col1Row1
+						</td>
+						<td>
+							Col2Row1
+						</td>
+						<td>
+							Col3Row1
+						</td>
+						<td>
+							Col4Row1
+						</td>
+						<td>
+							Col1Row2
+						</td>
+						<td>
+							Col2Row2
+						</td>
+						<td>
+							Col3Row2
+						</td>
+						<td>
+							Col4Row2
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_70bef5a2_7dba_4d7f_91b6_84d3c3990d80_Class())">
+				<table>
+					<tr>
+						<th>
+							Test Header 1
+						</th>
+						<th>
+							Test Header 2
+						</th>
+						<th>
+							Test Header 3
+						</th>
+						<th>
+							Test Header 4
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Col1Row1
+						</td>
+						<td>
+							Col2Row1
+						</td>
+						<td>
+							Col3Row1
+						</td>
+						<td>
+							Col4Row1
+						</td>
+						<td>
+							Col1Row2
+						</td>
+						<td>
+							Col2Row2
+						</td>
+						<td>
+							Col3Row2
+						</td>
+						<td>
+							Col4Row2
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_70bef5a2_7dba_4d7f_91b6_84d3c3990d80_Class())">
+				<table>
+					<tr>
+						<th>
+							Test Header 1
+						</th>
+						<th>
+							Test Header 2
+						</th>
+						<th>
+							Test Header 3
+						</th>
+						<th>
+							Test Header 4
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Col1Row1
+						</td>
+						<td>
+							Col2Row1
+						</td>
+						<td>
+							Col3Row1
+						</td>
+						<td>
+							Col4Row1
+						</td>
+						<td>
+							Col1Row2
+						</td>
+						<td>
+							Col2Row2
+						</td>
+						<td>
+							Col3Row2
+						</td>
+						<td>
+							Col4Row2
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_70bef5a2_7dba_4d7f_91b6_84d3c3990d80_Class())">
+				<table>
+					<tr>
+						<th>
+							Test Header 1
+						</th>
+						<th>
+							Test Header 2
+						</th>
+						<th>
+							Test Header 3
+						</th>
+						<th>
+							Test Header 4
+						</th>
+					</tr>
+					<tr>
+						<td>
+							Col1Row1
+						</td>
+						<td>
+							Col2Row1
+						</td>
+						<td>
+							Col3Row1
+						</td>
+						<td>
+							Col4Row1
+						</td>
+						<td>
+							Col1Row2
+						</td>
+						<td>
+							Col2Row2
+						</td>
+						<td>
+							Col3Row2
+						</td>
+						<td>
+							Col4Row2
+						</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col5Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col2Row4
+		</td>
+		<td>
+			Col3Row4
+		</td>
+		<td>
+			Col4Row4
+		</td>
+		<td>
+			Col5Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+		<td>
+			Col2Row5
+		</td>
+		<td>
+			Col3Row5
+		</td>
+		<td>
+			Col4Row5
+		</td>
+		<td>
+			Col5Row5
+		</td>
+	</tr>
+</table>
+@if (_1bdf768d_591d_4050_824e_199e78b51187_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1bdf768d_591d_4050_824e_199e78b51187_buttonVisibilityTest = !_1bdf768d_591d_4050_824e_199e78b51187_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _6c8835c6_77d4_4382_8c8f_8c8bdd5875e1_buttonVisibilityTest;
+	private bool _1bdf768d_591d_4050_824e_199e78b51187_buttonVisibilityTest;
+	private string _b56de185_1de7_4dd1_9520_b7a7ad84fad7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _36c18da1_e228_449a_bcbe_0fd4bec6931a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_9b2d3686_778f_4bd9_80ee_f45802b634de_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_a6a15645_3138_44ca_96ed_f031a46e46ab_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _0a36b9d9_35a0_4933_b8c3_ce8845cb80e3_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_70bef5a2_7dba_4d7f_91b6_84d3c3990d80_Class()
+	{
+		return "alert alert-info";
+	}
+} 

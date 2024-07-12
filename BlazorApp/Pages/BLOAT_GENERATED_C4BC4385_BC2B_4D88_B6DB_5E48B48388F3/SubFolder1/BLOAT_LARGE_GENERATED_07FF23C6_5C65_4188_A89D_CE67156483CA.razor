@@ -1,0 +1,373 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_16f57d96_62a6_4498_a31f_62d8e996685f_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	This is a test button! 
+</button>
+@if (_8d530881_d699_44fe_ae12_bea7726feea5_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _8d530881_d699_44fe_ae12_bea7726feea5_buttonVisibilityTest = !_8d530881_d699_44fe_ae12_bea7726feea5_buttonVisibilityTest"> 
+		<div class="@(Get_d43f1950_57c0_4447_bebc_8f97962c5bfc_Class())">
+			<p>This div is a test!</p>
+		</div>
+	</TelerikButton> 
+}
+@if (_29a19395_a867_47fb_8916_fbd4e32605fa_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _29a19395_a867_47fb_8916_fbd4e32605fa_buttonVisibilityTest = !_29a19395_a867_47fb_8916_fbd4e32605fa_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_de838a31_90ba_442f_a86b_cbdee6c2a3ae_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+@if (_a1b94a28_04fe_459e_ad9f_0c8d18c2b48d_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _a1b94a28_04fe_459e_ad9f_0c8d18c2b48d_buttonVisibilityTest = !_a1b94a28_04fe_459e_ad9f_0c8d18c2b48d_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_b7c2e0fd_a9f9_43f7_b896_c5f2ae9ae158_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_44cd32d7_1d86_4bb0_86b6_646deeb6e645_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _8d530881_d699_44fe_ae12_bea7726feea5_buttonVisibilityTest;
+	private bool _29a19395_a867_47fb_8916_fbd4e32605fa_buttonVisibilityTest;
+	private bool _a1b94a28_04fe_459e_ad9f_0c8d18c2b48d_buttonVisibilityTest;
+	private void _16f57d96_62a6_4498_a31f_62d8e996685f_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_d43f1950_57c0_4447_bebc_8f97962c5bfc_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_de838a31_90ba_442f_a86b_cbdee6c2a3ae_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_b7c2e0fd_a9f9_43f7_b896_c5f2ae9ae158_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_44cd32d7_1d86_4bb0_86b6_646deeb6e645_Class()
+	{
+		return "alert alert-info";
+	}
+} 

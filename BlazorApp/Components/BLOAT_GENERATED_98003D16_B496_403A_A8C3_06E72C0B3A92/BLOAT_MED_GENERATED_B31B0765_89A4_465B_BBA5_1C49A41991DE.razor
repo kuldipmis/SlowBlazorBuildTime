@@ -1,0 +1,43 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5dcd2c1f_55ed_4aab_b561_c3a95e87f3e0_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _5dcd2c1f_55ed_4aab_b561_c3a95e87f3e0_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _5dcd2c1f_55ed_4aab_b561_c3a95e87f3e0_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _5dcd2c1f_55ed_4aab_b561_c3a95e87f3e0_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _94aa2665_02aa_4091_a21f_9498c34acbff_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _94aa2665_02aa_4091_a21f_9498c34acbff_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string _5dcd2c1f_55ed_4aab_b561_c3a95e87f3e0_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _94aa2665_02aa_4091_a21f_9498c34acbff_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

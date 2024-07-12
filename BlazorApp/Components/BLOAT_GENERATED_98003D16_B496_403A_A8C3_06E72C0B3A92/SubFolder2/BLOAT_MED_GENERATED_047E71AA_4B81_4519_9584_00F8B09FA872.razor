@@ -1,0 +1,36 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_66d77551_1627_4e43_9fff_0e79dfc8f164_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_ed3b1dbf_a8b3_44d5_9ebd_633f2eb6e024_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_99296fed_8459_42b6_b40f_086f67a8be42_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+
+	private void _66d77551_1627_4e43_9fff_0e79dfc8f164_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_ed3b1dbf_a8b3_44d5_9ebd_633f2eb6e024_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_99296fed_8459_42b6_b40f_086f67a8be42_Class()
+	{
+		return "alert alert-info";
+	}
+} 

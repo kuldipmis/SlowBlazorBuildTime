@@ -1,0 +1,87 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_01668c13_c5fb_4eca_8c14_9ad61c530c69_Class())">
+	<div class="@(Get_fcfafd22_1e26_4fb5_9275_79b74e634ebf_Class())">
+		<p>This div is a test!</p>
+	</div>
+</div>
+<a href="#">
+	@(GetAnchor_eab16c24_baa8_4176_af7e_de762b3a3d95_Text())
+</a>
+@if (_f8fa5fff_ce7d_411d_a1d3_0cce689a1d62_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _f8fa5fff_ce7d_411d_a1d3_0cce689a1d62_buttonVisibilityTest = !_f8fa5fff_ce7d_411d_a1d3_0cce689a1d62_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _8c93b2ae_304b_4143_b334_f7a5d3569409_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _8c93b2ae_304b_4143_b334_f7a5d3569409_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_608e210f_4cce_48c3_953f_c88a6e1fb0c2_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _608e210f_4cce_48c3_953f_c88a6e1fb0c2_buttonVisibilityTest = !_608e210f_4cce_48c3_953f_c88a6e1fb0c2_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _2bfd8965_0c68_444f_bf10_7ae831cb0e09_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _2bfd8965_0c68_444f_bf10_7ae831cb0e09_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _2bfd8965_0c68_444f_bf10_7ae831cb0e09_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _2bfd8965_0c68_444f_bf10_7ae831cb0e09_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_267307d3_834f_411c_9b8e_40c8193a092b_Text())
+</a>
+<div class="@(Get_00da01eb_081d_4a22_8d15_f2f7b93e787c_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _f8fa5fff_ce7d_411d_a1d3_0cce689a1d62_buttonVisibilityTest;
+	private bool _608e210f_4cce_48c3_953f_c88a6e1fb0c2_buttonVisibilityTest;
+	private string Get_fcfafd22_1e26_4fb5_9275_79b74e634ebf_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_01668c13_c5fb_4eca_8c14_9ad61c530c69_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_eab16c24_baa8_4176_af7e_de762b3a3d95_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _8c93b2ae_304b_4143_b334_f7a5d3569409_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _2bfd8965_0c68_444f_bf10_7ae831cb0e09_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_267307d3_834f_411c_9b8e_40c8193a092b_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_00da01eb_081d_4a22_8d15_f2f7b93e787c_Class()
+	{
+		return "alert alert-info";
+	}
+} 

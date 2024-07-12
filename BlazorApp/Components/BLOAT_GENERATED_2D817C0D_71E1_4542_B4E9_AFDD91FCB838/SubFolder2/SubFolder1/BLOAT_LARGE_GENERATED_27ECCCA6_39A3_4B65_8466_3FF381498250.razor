@@ -1,0 +1,104 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_c407e94a_68dd_4233_b681_0cf40c2efc7d_Text())
+</a>
+<a href="#">
+	@(GetAnchor_0986450d_6d1a_4e0a_9ed9_57864c68a8c1_Text())
+</a>
+@if (_effe3e2d_51c5_4f1a_a7e6_a88e62ea5f67_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _effe3e2d_51c5_4f1a_a7e6_a88e62ea5f67_buttonVisibilityTest = !_effe3e2d_51c5_4f1a_a7e6_a88e62ea5f67_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+@if (_498263f4_3f14_4478_8136_3fdcf8073386_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _498263f4_3f14_4478_8136_3fdcf8073386_buttonVisibilityTest = !_498263f4_3f14_4478_8136_3fdcf8073386_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_548a4328_ee0f_44b5_870b_ae7687142280_Text())
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+		<td>
+			<button>
+				This is a test button! 
+			</button>
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d5047c60_2a13_4a4c_b8e4_9eefec559131_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_c6d98467_d1cf_4f8d_84da_ccab64287a25_Text())
+</a>
+<div class="@(Get_817c17d3_1102_4857_997f_03556c2acc07_Class())">
+	<div class="@(Get_96aacba8_d488_432d_865c_9990d398ddfa_Class())">
+		<p>This div is a test!</p>
+	</div>
+</div>
+@code { 
+	private bool _effe3e2d_51c5_4f1a_a7e6_a88e62ea5f67_buttonVisibilityTest;
+	private bool _498263f4_3f14_4478_8136_3fdcf8073386_buttonVisibilityTest;
+	private bool _550ce0e9_f1c5_4a16_a592_a4d4b7fa5b22_buttonVisibilityTest;
+	private string GetAnchor_c407e94a_68dd_4233_b681_0cf40c2efc7d_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_0986450d_6d1a_4e0a_9ed9_57864c68a8c1_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_548a4328_ee0f_44b5_870b_ae7687142280_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _d5047c60_2a13_4a4c_b8e4_9eefec559131_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_c6d98467_d1cf_4f8d_84da_ccab64287a25_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_96aacba8_d488_432d_865c_9990d398ddfa_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_817c17d3_1102_4857_997f_03556c2acc07_Class()
+	{
+		return "alert alert-info";
+	}
+} 

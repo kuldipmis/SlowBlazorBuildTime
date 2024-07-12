@@ -1,0 +1,25 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _00e02f18_8c89_4108_9d28_1a5443bc4b18_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _00e02f18_8c89_4108_9d28_1a5443bc4b18_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _00e02f18_8c89_4108_9d28_1a5443bc4b18_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string _00e02f18_8c89_4108_9d28_1a5443bc4b18_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

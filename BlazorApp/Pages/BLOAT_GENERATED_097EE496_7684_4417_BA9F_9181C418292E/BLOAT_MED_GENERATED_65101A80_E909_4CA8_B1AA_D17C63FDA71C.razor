@@ -1,0 +1,51 @@
+@using Telerik.Blazor.Components;
+@if (_5996b51c_0814_4355_940d_065e6fd7860a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5996b51c_0814_4355_940d_065e6fd7860a_buttonVisibilityTest = !_5996b51c_0814_4355_940d_065e6fd7860a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_f635bfd6_8d29_4719_9aa6_c68650cb23cf_GridOnRead"> 
+	<GridColumns> 
+		<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_793fb81b_d2c0_44af_82c7_80542c2f09d6_GridOnRead"> 
+			<GridColumns> 
+				<GridColumn Field="Item1" Title="TestColumn1"/> 
+				<GridColumn Field="Item2" Title="TestColumn2"/> 
+			</GridColumns> 
+		</TelerikGrid> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_208558ba_e987_49cc_ae4e_c650c6b0b287_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _208558ba_e987_49cc_ae4e_c650c6b0b287_buttonVisibilityTest = !_208558ba_e987_49cc_ae4e_c650c6b0b287_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _5996b51c_0814_4355_940d_065e6fd7860a_buttonVisibilityTest;
+	private bool _208558ba_e987_49cc_ae4e_c650c6b0b287_buttonVisibilityTest;
+	private void _793fb81b_d2c0_44af_82c7_80542c2f09d6_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _f635bfd6_8d29_4719_9aa6_c68650cb23cf_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

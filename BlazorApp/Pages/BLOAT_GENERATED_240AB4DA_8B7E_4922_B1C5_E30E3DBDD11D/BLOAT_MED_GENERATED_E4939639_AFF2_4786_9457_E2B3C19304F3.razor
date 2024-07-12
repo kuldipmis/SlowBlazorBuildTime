@@ -1,0 +1,23 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_9754760e_bf5a_48ae_9e8c_789da66649c3_Class())">
+	@if (_1cf3b381_ced9_4a30_9dc9_e7e1cb310d91_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _1cf3b381_ced9_4a30_9dc9_e7e1cb310d91_buttonVisibilityTest = !_1cf3b381_ced9_4a30_9dc9_e7e1cb310d91_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</div>
+<a href="#">
+	@(GetAnchor_4b3a9eba_4f98_4cb6_8c2c_e4a168611e75_Text())
+</a>
+@code { 
+	private bool _1cf3b381_ced9_4a30_9dc9_e7e1cb310d91_buttonVisibilityTest;
+	private string Get_9754760e_bf5a_48ae_9e8c_789da66649c3_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_4b3a9eba_4f98_4cb6_8c2c_e4a168611e75_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

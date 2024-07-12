@@ -1,0 +1,100 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_73e51745_8695_4959_93e1_0849f4314b14_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d1f591bc_045b_4ae7_b34e_935e02c75db7_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d1f591bc_045b_4ae7_b34e_935e02c75db7_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _d1f591bc_045b_4ae7_b34e_935e02c75db7_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_23669180_054f_450b_9cd8_c9abf3a06188_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _23669180_054f_450b_9cd8_c9abf3a06188_buttonVisibilityTest = !_23669180_054f_450b_9cd8_c9abf3a06188_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_364c404a_ac78_447b_8cbf_2a434ba2b861_GridOnRead"> 
+	<GridColumns> 
+		<table>
+			<tr>
+				<th>
+					Test Header 1
+				</th>
+				<th>
+					Test Header 2
+				</th>
+			</tr>
+			<tr>
+				<td>
+					Col1Row1
+				</td>
+				<td>
+					Col2Row1
+				</td>
+				<td>
+					Col1Row2
+				</td>
+				<td>
+					Col2Row2
+				</td>
+				<td>
+					Col1Row3
+				</td>
+				<td>
+					Col2Row3
+				</td>
+				<td>
+					Col1Row4
+				</td>
+				<td>
+					Col2Row4
+				</td>
+				<td>
+					Col1Row5
+				</td>
+				<td>
+					Col2Row5
+				</td>
+			</tr>
+		</table>
+	</GridColumns> 
+</TelerikGrid> 
+@if (_1fd5ab62_11c1_4f73_973f_a556d278b3fb_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1fd5ab62_11c1_4f73_973f_a556d278b3fb_buttonVisibilityTest = !_1fd5ab62_11c1_4f73_973f_a556d278b3fb_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _23669180_054f_450b_9cd8_c9abf3a06188_buttonVisibilityTest;
+	private bool _1fd5ab62_11c1_4f73_973f_a556d278b3fb_buttonVisibilityTest;
+	private string Get_73e51745_8695_4959_93e1_0849f4314b14_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _d1f591bc_045b_4ae7_b34e_935e02c75db7_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _364c404a_ac78_447b_8cbf_2a434ba2b861_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

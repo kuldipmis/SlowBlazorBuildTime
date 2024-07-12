@@ -1,0 +1,94 @@
+@using Telerik.Blazor.Components;
+@if (_7d72a43d_249b_4ed9_ad51_54bcdca26f37_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _7d72a43d_249b_4ed9_ad51_54bcdca26f37_buttonVisibilityTest = !_7d72a43d_249b_4ed9_ad51_54bcdca26f37_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_a8a6d589_44cb_4c9b_8807_f032fd492a55_Text())
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _f620da5f_0f17_46fd_b17b_e34bb20dca75_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _f620da5f_0f17_46fd_b17b_e34bb20dca75_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _f620da5f_0f17_46fd_b17b_e34bb20dca75_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _f620da5f_0f17_46fd_b17b_e34bb20dca75_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _32bbb6e6_c8bb_4ead_9202_ab5e87156655_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _32bbb6e6_c8bb_4ead_9202_ab5e87156655_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _32bbb6e6_c8bb_4ead_9202_ab5e87156655_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _32bbb6e6_c8bb_4ead_9202_ab5e87156655_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _7d72a43d_249b_4ed9_ad51_54bcdca26f37_buttonVisibilityTest;
+	private string GetAnchor_a8a6d589_44cb_4c9b_8807_f032fd492a55_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _f620da5f_0f17_46fd_b17b_e34bb20dca75_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _32bbb6e6_c8bb_4ead_9202_ab5e87156655_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

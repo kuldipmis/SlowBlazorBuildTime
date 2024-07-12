@@ -1,0 +1,165 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_a65026ae_30aa_4a98_a18c_14d3332e2d50_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ad34ee7e_909f_4a05_a3ab_80a8ee674102_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_fb3e7d60_0984_4229_9fd0_d7994cc547bc_Class())">
+	<p>This div is a test!</p>
+</div>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text())
+			</a>
+		</td>
+	</tr>
+</table>
+<button>
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+			<td>
+				Col1Row2
+			</td>
+			<td>
+				Col2Row2
+			</td>
+			<td>
+				Col1Row3
+			</td>
+			<td>
+				Col2Row3
+			</td>
+			<td>
+				Col1Row4
+			</td>
+			<td>
+				Col2Row4
+			</td>
+			<td>
+				Col1Row5
+			</td>
+			<td>
+				Col2Row5
+			</td>
+		</tr>
+	</table>
+</button>
+<button>
+	This is a test button! 
+</button>
+@code { 
+
+	private string Get_a65026ae_30aa_4a98_a18c_14d3332e2d50_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _ad34ee7e_909f_4a05_a3ab_80a8ee674102_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_fb3e7d60_0984_4229_9fd0_d7994cc547bc_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_27d45ea6_b3c9_4c47_8840_e331574376b0_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

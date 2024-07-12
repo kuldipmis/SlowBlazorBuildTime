@@ -1,0 +1,56 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_737213a6_b490_4876_aab8_c28abe4a1893_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_246adbc8_2f42_46c7_a6a5_46690b89e50f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ec2e53f8_81fe_400a_8b2e_bc36e93b96d2_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_7d8fc5a1_3cbf_4aa4_8dcc_41ab3482ff36_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _7d8fc5a1_3cbf_4aa4_8dcc_41ab3482ff36_buttonVisibilityTest = !_7d8fc5a1_3cbf_4aa4_8dcc_41ab3482ff36_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _7d8fc5a1_3cbf_4aa4_8dcc_41ab3482ff36_buttonVisibilityTest;
+	private void _737213a6_b490_4876_aab8_c28abe4a1893_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_246adbc8_2f42_46c7_a6a5_46690b89e50f_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _ec2e53f8_81fe_400a_8b2e_bc36e93b96d2_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

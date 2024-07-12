@@ -1,0 +1,112 @@
+@using Telerik.Blazor.Components;
+@if (_e409b383_1f3d_4c15_a517_94499c3aace6_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e409b383_1f3d_4c15_a517_94499c3aace6_buttonVisibilityTest = !_e409b383_1f3d_4c15_a517_94499c3aace6_buttonVisibilityTest"> 
+		<div class="@(Get_985bc535_3f3b_42f2_8dec_42f039f3ea0c_Class())">
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+					<th>
+						Test Header 2
+					</th>
+					<th>
+						Test Header 3
+					</th>
+					<th>
+						Test Header 4
+					</th>
+					<th>
+						Test Header 5
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col2Row1
+					</td>
+					<td>
+						Col3Row1
+					</td>
+					<td>
+						Col4Row1
+					</td>
+					<td>
+						Col5Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+					<td>
+						Col2Row2
+					</td>
+					<td>
+						Col3Row2
+					</td>
+					<td>
+						Col4Row2
+					</td>
+					<td>
+						Col5Row2
+					</td>
+				</tr>
+			</table>
+		</div>
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+@if (_5e7506b5_7302_4820_9578_6665c7815ffb_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _5e7506b5_7302_4820_9578_6665c7815ffb_buttonVisibilityTest = !_5e7506b5_7302_4820_9578_6665c7815ffb_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_35df50f7_ece4_4d6d_9be2_0dd265c052d8_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _35df50f7_ece4_4d6d_9be2_0dd265c052d8_buttonVisibilityTest = !_35df50f7_ece4_4d6d_9be2_0dd265c052d8_buttonVisibilityTest"> 
+		<button>
+			<TelerikTabStrip> 
+				<TabStripTab> 
+					@{ var tabStrip0Data = _4e3f740f_6ee8_42ff_a127_35d11d9fc91d_GetTabStripData(); }
+					@tabStrip0Data
+				</TabStripTab> 
+			</TelerikTabStrip> 
+		</button>
+	</TelerikButton> 
+}
+@code { 
+	private bool _e409b383_1f3d_4c15_a517_94499c3aace6_buttonVisibilityTest;
+	private bool _5e7506b5_7302_4820_9578_6665c7815ffb_buttonVisibilityTest;
+	private bool _35df50f7_ece4_4d6d_9be2_0dd265c052d8_buttonVisibilityTest;
+	private string Get_985bc535_3f3b_42f2_8dec_42f039f3ea0c_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _4e3f740f_6ee8_42ff_a127_35d11d9fc91d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

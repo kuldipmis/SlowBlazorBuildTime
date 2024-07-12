@@ -1,0 +1,51 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _c41de796_68a3_47eb_b05e_3460187284cf_buttonVisibilityTest;
+	private string _5a1d8609_ff96_4754_86eb_9a216f382237_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

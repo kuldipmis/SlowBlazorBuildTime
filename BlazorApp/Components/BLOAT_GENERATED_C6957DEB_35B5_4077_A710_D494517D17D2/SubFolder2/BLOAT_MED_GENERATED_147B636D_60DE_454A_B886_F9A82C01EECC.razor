@@ -1,0 +1,74 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_c923fdcf_cf7e_4109_8e2b_a0879240b0b4_Class())">
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+			<th>
+				Test Header 2
+			</th>
+			<th>
+				Test Header 3
+			</th>
+			<th>
+				Test Header 4
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col2Row1
+			</td>
+			<td>
+				Col3Row1
+			</td>
+			<td>
+				Col4Row1
+			</td>
+		</tr>
+	</table>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_4c3c1fd4_496a_4d81_9cef_fe1de0e62647_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_dd15e0f8_9182_4833_ab28_b2211a5267a8_Text())
+	@if (_f7dc6d84_e8f8_4b12_9b94_3f543a6cc078_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _f7dc6d84_e8f8_4b12_9b94_3f543a6cc078_buttonVisibilityTest = !_f7dc6d84_e8f8_4b12_9b94_3f543a6cc078_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</a>
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _f7dc6d84_e8f8_4b12_9b94_3f543a6cc078_buttonVisibilityTest;
+	private string Get_c923fdcf_cf7e_4109_8e2b_a0879240b0b4_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _4c3c1fd4_496a_4d81_9cef_fe1de0e62647_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_dd15e0f8_9182_4833_ab28_b2211a5267a8_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

@@ -1,0 +1,41 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+@if (_69e6a754_2b42_4f2e_980e_ac6c489e91f2_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _69e6a754_2b42_4f2e_980e_ac6c489e91f2_buttonVisibilityTest = !_69e6a754_2b42_4f2e_980e_ac6c489e91f2_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_568aca50_710d_4d75_90f1_fcb2060d7985_Text())
+</a>
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_2807e5dc_a0d5_4301_b728_cd60e90c7e76_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _69e6a754_2b42_4f2e_980e_ac6c489e91f2_buttonVisibilityTest;
+	private string GetAnchor_568aca50_710d_4d75_90f1_fcb2060d7985_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _2807e5dc_a0d5_4301_b728_cd60e90c7e76_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

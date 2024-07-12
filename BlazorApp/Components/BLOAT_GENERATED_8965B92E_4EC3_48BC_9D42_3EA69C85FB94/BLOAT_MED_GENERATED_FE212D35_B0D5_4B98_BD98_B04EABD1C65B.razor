@@ -1,0 +1,45 @@
+@using Telerik.Blazor.Components;
+@if (_9d11a9eb_acc1_416d_a489_a8ba3e6bac85_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _9d11a9eb_acc1_416d_a489_a8ba3e6bac85_buttonVisibilityTest = !_9d11a9eb_acc1_416d_a489_a8ba3e6bac85_buttonVisibilityTest"> 
+		@if (_5395ed1e_2487_4b27_bba5_c0fa66eccc87_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _5395ed1e_2487_4b27_bba5_c0fa66eccc87_buttonVisibilityTest = !_5395ed1e_2487_4b27_bba5_c0fa66eccc87_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_23e60627_deb7_40d5_80ca_b432f79b6362_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _40113ece_8380_4774_9ce8_d191ff39a799_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _40113ece_8380_4774_9ce8_d191ff39a799_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _40113ece_8380_4774_9ce8_d191ff39a799_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _40113ece_8380_4774_9ce8_d191ff39a799_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _5395ed1e_2487_4b27_bba5_c0fa66eccc87_buttonVisibilityTest;
+	private bool _9d11a9eb_acc1_416d_a489_a8ba3e6bac85_buttonVisibilityTest;
+	private string GetAnchor_23e60627_deb7_40d5_80ca_b432f79b6362_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _40113ece_8380_4774_9ce8_d191ff39a799_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,40 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_f9d0d304_997c_45d3_8048_666585af7301_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_833dd97b_5d19_431f_93ab_44dd5404059f_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _c7e187f8_5c70_49f2_9d64_7569d2f0e211_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _c7e187f8_5c70_49f2_9d64_7569d2f0e211_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _c7e187f8_5c70_49f2_9d64_7569d2f0e211_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _c7e187f8_5c70_49f2_9d64_7569d2f0e211_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+
+	private string Get_f9d0d304_997c_45d3_8048_666585af7301_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_833dd97b_5d19_431f_93ab_44dd5404059f_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _c7e187f8_5c70_49f2_9d64_7569d2f0e211_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

@@ -1,0 +1,36 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_e1c7e36d_7c88_49ff_906e_8a6228f15335_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_388915c0_1e24_437a_b340_ccfde3b418f2_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<a href="#">
+	@(GetAnchor_bbbee464_fbc7_4cd6_a559_6ffb5d44f9e5_Text())
+</a>
+@code { 
+
+	private string Get_e1c7e36d_7c88_49ff_906e_8a6228f15335_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _388915c0_1e24_437a_b340_ccfde3b418f2_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_bbbee464_fbc7_4cd6_a559_6ffb5d44f9e5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

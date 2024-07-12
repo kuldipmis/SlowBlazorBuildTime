@@ -1,0 +1,85 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_1d006bae_545c_4c12_9fb9_0df818293201_Class())">
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _84fa07ca_7f6c_4408_9fa3_a5557e93fcec_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</div>
+@if (_c1b8e140_4b7f_4290_9b58_5be972cbf67a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _c1b8e140_4b7f_4290_9b58_5be972cbf67a_buttonVisibilityTest = !_c1b8e140_4b7f_4290_9b58_5be972cbf67a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_2cb95e32_5ad7_487c_9495_7cb8d8078feb_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d8da1786_ac86_483b_a2e2_2846ce2e0101_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d8da1786_ac86_483b_a2e2_2846ce2e0101_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+@code { 
+	private bool _c1b8e140_4b7f_4290_9b58_5be972cbf67a_buttonVisibilityTest;
+	private string _84fa07ca_7f6c_4408_9fa3_a5557e93fcec_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_1d006bae_545c_4c12_9fb9_0df818293201_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _2cb95e32_5ad7_487c_9495_7cb8d8078feb_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _d8da1786_ac86_483b_a2e2_2846ce2e0101_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

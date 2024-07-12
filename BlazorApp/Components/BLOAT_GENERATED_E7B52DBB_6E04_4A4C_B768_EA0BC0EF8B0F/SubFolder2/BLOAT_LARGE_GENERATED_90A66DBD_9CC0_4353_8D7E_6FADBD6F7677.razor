@@ -1,0 +1,75 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _6a0ea587_710f_43c7_a8b2_0cbc5cadbbac_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_95d25bc5_0976_4ef6_9883_771de2a4e8cd_Text())
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _0e6f48a0_9f99_4274_b02c_f9b5ca3a524d_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _0e6f48a0_9f99_4274_b02c_f9b5ca3a524d_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip2Data = _0e6f48a0_9f99_4274_b02c_f9b5ca3a524d_GetTabStripData(); }
+			@tabStrip2Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _206aef20_ec37_4f40_9b08_13da2e03cff6_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_537cdeef_43dd_4ae1_b862_0a6815721e82_Class())">
+	<p>This div is a test!</p>
+</div>
+<a href="#">
+	@(GetAnchor_641d8b4b_ea07_4a2b_8a73_c0203d6718f5_Text())
+</a>
+@code { 
+
+	private string _6a0ea587_710f_43c7_a8b2_0cbc5cadbbac_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _84d4083f_74bc_400b_ba2d_989bed8954bd_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _0e6f48a0_9f99_4274_b02c_f9b5ca3a524d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_95d25bc5_0976_4ef6_9883_771de2a4e8cd_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _206aef20_ec37_4f40_9b08_13da2e03cff6_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_537cdeef_43dd_4ae1_b862_0a6815721e82_Class()
+	{
+		return "alert alert-info";
+	}
+	private string GetAnchor_641d8b4b_ea07_4a2b_8a73_c0203d6718f5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

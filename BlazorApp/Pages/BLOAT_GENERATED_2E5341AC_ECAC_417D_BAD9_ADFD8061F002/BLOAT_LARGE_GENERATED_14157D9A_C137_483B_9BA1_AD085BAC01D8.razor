@@ -1,0 +1,80 @@
+@using Telerik.Blazor.Components;
+<a href="#">
+	@(GetAnchor_c34d479c_ff2e_4c75_9540_dbbaa6371ed8_Text())
+</a>
+@if (_854a9ea4_4875_4213_b6cd_4756cdae5003_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _854a9ea4_4875_4213_b6cd_4756cdae5003_buttonVisibilityTest = !_854a9ea4_4875_4213_b6cd_4756cdae5003_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5c0b2f80_d8c7_4681_a006_bbef8f8fa683_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _c94766e9_0a98_4831_9f26_829c5df33f46_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _c94766e9_0a98_4831_9f26_829c5df33f46_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _c94766e9_0a98_4831_9f26_829c5df33f46_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _c94766e9_0a98_4831_9f26_829c5df33f46_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_13d7e7b3_d19a_45a2_a6ac_072d3e87fb49_Text())
+</a>
+@if (_41a4bc7c_4c31_4418_9e30_4ea73265bb8a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _41a4bc7c_4c31_4418_9e30_4ea73265bb8a_buttonVisibilityTest = !_41a4bc7c_4c31_4418_9e30_4ea73265bb8a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _de9ce95f_b317_48bd_a046_1f409ba2c29c_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _de9ce95f_b317_48bd_a046_1f409ba2c29c_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _854a9ea4_4875_4213_b6cd_4756cdae5003_buttonVisibilityTest;
+	private bool _41a4bc7c_4c31_4418_9e30_4ea73265bb8a_buttonVisibilityTest;
+	private string GetAnchor_c34d479c_ff2e_4c75_9540_dbbaa6371ed8_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _5c0b2f80_d8c7_4681_a006_bbef8f8fa683_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _c94766e9_0a98_4831_9f26_829c5df33f46_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_13d7e7b3_d19a_45a2_a6ac_072d3e87fb49_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _de9ce95f_b317_48bd_a046_1f409ba2c29c_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

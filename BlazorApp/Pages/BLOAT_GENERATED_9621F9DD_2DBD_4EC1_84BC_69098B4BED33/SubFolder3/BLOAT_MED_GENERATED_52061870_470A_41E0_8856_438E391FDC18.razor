@@ -1,0 +1,64 @@
+@using Telerik.Blazor.Components;
+@if (_79594d39_642f_48f6_8c72_4c73315de540_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _79594d39_642f_48f6_8c72_4c73315de540_buttonVisibilityTest = !_79594d39_642f_48f6_8c72_4c73315de540_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_e166ef8c_b1e6_4bb5_8a2f_500796886b92_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e166ef8c_b1e6_4bb5_8a2f_500796886b92_buttonVisibilityTest = !_e166ef8c_b1e6_4bb5_8a2f_500796886b92_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@if (_b9ac8f2c_e531_455b_b2ea_a7fd5bfad986_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b9ac8f2c_e531_455b_b2ea_a7fd5bfad986_buttonVisibilityTest = !_b9ac8f2c_e531_455b_b2ea_a7fd5bfad986_buttonVisibilityTest"> 
+		@if (_75b44c1b_54b0_4409_b702_43966fa458c5_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _75b44c1b_54b0_4409_b702_43966fa458c5_buttonVisibilityTest = !_75b44c1b_54b0_4409_b702_43966fa458c5_buttonVisibilityTest"> 
+				This is a test button! 
+			</TelerikButton> 
+		}
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+	</tr>
+</table>
+<div class="@(Get_d62cd9f1_d458_4fbb_9c4a_c7a958c50d32_Class())">
+	@if (_ec3d6a05_5153_4695_a122_0af36dff9fd3_buttonVisibilityTest) 
+	{
+		<TelerikButton OnClick="() => _ec3d6a05_5153_4695_a122_0af36dff9fd3_buttonVisibilityTest = !_ec3d6a05_5153_4695_a122_0af36dff9fd3_buttonVisibilityTest"> 
+			This is a test button! 
+		</TelerikButton> 
+	}
+</div>
+@code { 
+	private bool _79594d39_642f_48f6_8c72_4c73315de540_buttonVisibilityTest;
+	private bool _e166ef8c_b1e6_4bb5_8a2f_500796886b92_buttonVisibilityTest;
+	private bool _75b44c1b_54b0_4409_b702_43966fa458c5_buttonVisibilityTest;
+	private bool _b9ac8f2c_e531_455b_b2ea_a7fd5bfad986_buttonVisibilityTest;
+	private bool _ec3d6a05_5153_4695_a122_0af36dff9fd3_buttonVisibilityTest;
+	private string Get_d62cd9f1_d458_4fbb_9c4a_c7a958c50d32_Class()
+	{
+		return "alert alert-info";
+	}
+} 

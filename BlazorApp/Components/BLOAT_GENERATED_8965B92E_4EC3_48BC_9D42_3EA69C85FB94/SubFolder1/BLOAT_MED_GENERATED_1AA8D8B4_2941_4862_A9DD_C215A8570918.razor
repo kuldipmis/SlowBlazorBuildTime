@@ -1,0 +1,77 @@
+@using Telerik.Blazor.Components;
+<div class="@(Get_fd342bcf_1949_4c68_90d9_9b317da79d0d_Class())">
+	<table>
+		<tr>
+			<th>
+				Test Header 1
+			</th>
+		</tr>
+		<tr>
+			<td>
+				Col1Row1
+			</td>
+			<td>
+				Col1Row2
+			</td>
+			<td>
+				Col1Row3
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="@(Get_f184ffd4_6a1a_4e56_8fdf_05baaeb8c15c_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_0bbda7d3_c1a5_4b34_8ede_fa55a40dc408_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _0bbda7d3_c1a5_4b34_8ede_fa55a40dc408_buttonVisibilityTest = !_0bbda7d3_c1a5_4b34_8ede_fa55a40dc408_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ea0560ef_6aed_41b2_8bb0_c66cb38d4d7a_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_2d7b0987_fc75_4eeb_bbb6_0273fcaf56fc_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@code { 
+	private bool _0bbda7d3_c1a5_4b34_8ede_fa55a40dc408_buttonVisibilityTest;
+	private string Get_fd342bcf_1949_4c68_90d9_9b317da79d0d_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_f184ffd4_6a1a_4e56_8fdf_05baaeb8c15c_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _ea0560ef_6aed_41b2_8bb0_c66cb38d4d7a_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private void _2d7b0987_fc75_4eeb_bbb6_0273fcaf56fc_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

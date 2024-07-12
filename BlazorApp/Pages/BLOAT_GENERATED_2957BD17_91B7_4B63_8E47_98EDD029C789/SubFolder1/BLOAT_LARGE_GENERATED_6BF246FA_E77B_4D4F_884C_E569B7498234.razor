@@ -1,0 +1,101 @@
+@using Telerik.Blazor.Components;
+@if (_6116cdb2_b68f_4585_b514_737b8cacee08_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _6116cdb2_b68f_4585_b514_737b8cacee08_buttonVisibilityTest = !_6116cdb2_b68f_4585_b514_737b8cacee08_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_d2cd14fa_8c27_4d9b_bbcd_493dbd4dc2e4_Text())
+</a>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_dd14a0bb_62bc_4bee_a763_f4c5a6e8b985_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _6116cdb2_b68f_4585_b514_737b8cacee08_buttonVisibilityTest;
+	private string GetAnchor_d2cd14fa_8c27_4d9b_bbcd_493dbd4dc2e4_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _dd14a0bb_62bc_4bee_a763_f4c5a6e8b985_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

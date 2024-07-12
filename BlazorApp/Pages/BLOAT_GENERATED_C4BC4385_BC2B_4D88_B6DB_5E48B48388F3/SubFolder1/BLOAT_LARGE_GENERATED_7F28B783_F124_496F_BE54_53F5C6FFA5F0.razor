@@ -1,0 +1,138 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_611c1097_faf5_4fc3_ab1a_2abc8e95ca84_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_62eec046_d9f9_45c2_9430_a62abf0beb93_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _62eec046_d9f9_45c2_9430_a62abf0beb93_buttonVisibilityTest = !_62eec046_d9f9_45c2_9430_a62abf0beb93_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_dad9aa14_8b17_4bfa_a7a7_e2a670e1ef80_Class())">
+	<p>This div is a test!</p>
+</div>
+<button>
+	This is a test button! 
+</button>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_f96c7bcc_1993_4b05_ab74_626aa99091c6_Text())
+</a>
+<button>
+	This is a test button! 
+</button>
+@if (_f951bb14_ae7e_4d1e_b22e_e5e5bf9a75c6_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _f951bb14_ae7e_4d1e_b22e_e5e5bf9a75c6_buttonVisibilityTest = !_f951bb14_ae7e_4d1e_b22e_e5e5bf9a75c6_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_2d785c00_df49_4866_ab07_809bddc61653_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _62eec046_d9f9_45c2_9430_a62abf0beb93_buttonVisibilityTest;
+	private bool _f951bb14_ae7e_4d1e_b22e_e5e5bf9a75c6_buttonVisibilityTest;
+	private void _611c1097_faf5_4fc3_ab1a_2abc8e95ca84_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_dad9aa14_8b17_4bfa_a7a7_e2a670e1ef80_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _613eba24_10be_4c1b_a511_8585a513675a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_f96c7bcc_1993_4b05_ab74_626aa99091c6_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _d5aabaa0_7e49_4577_8d8d_65cf81d4beec_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_2d785c00_df49_4866_ab07_809bddc61653_Class()
+	{
+		return "alert alert-info";
+	}
+} 

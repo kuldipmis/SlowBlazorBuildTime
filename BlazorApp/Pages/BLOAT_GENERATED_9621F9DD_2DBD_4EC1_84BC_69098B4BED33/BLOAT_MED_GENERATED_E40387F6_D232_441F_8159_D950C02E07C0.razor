@@ -1,0 +1,91 @@
+@using Telerik.Blazor.Components;
+@if (_595c569e_8c0c_4f49_b8a9_a11d8569ea5e_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _595c569e_8c0c_4f49_b8a9_a11d8569ea5e_buttonVisibilityTest = !_595c569e_8c0c_4f49_b8a9_a11d8569ea5e_buttonVisibilityTest"> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _bb7189d9_0a0c_4ccd_8184_d9d06edbc2d8_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _fa6a651c_5697_49da_8f8e_4775ef74c141_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _fa6a651c_5697_49da_8f8e_4775ef74c141_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _fa6a651c_5697_49da_8f8e_4775ef74c141_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _fa6a651c_5697_49da_8f8e_4775ef74c141_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _17929f53_4bb7_43a3_a77f_d90cad25e77a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _17929f53_4bb7_43a3_a77f_d90cad25e77a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _17929f53_4bb7_43a3_a77f_d90cad25e77a_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _17929f53_4bb7_43a3_a77f_d90cad25e77a_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_d2f40a01_1041_45c7_b6aa_565546abd05b_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _d2f40a01_1041_45c7_b6aa_565546abd05b_buttonVisibilityTest = !_d2f40a01_1041_45c7_b6aa_565546abd05b_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _595c569e_8c0c_4f49_b8a9_a11d8569ea5e_buttonVisibilityTest;
+	private bool _d2f40a01_1041_45c7_b6aa_565546abd05b_buttonVisibilityTest;
+	private string _bb7189d9_0a0c_4ccd_8184_d9d06edbc2d8_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _fa6a651c_5697_49da_8f8e_4775ef74c141_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _17929f53_4bb7_43a3_a77f_d90cad25e77a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

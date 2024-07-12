@@ -1,0 +1,353 @@
+@using Telerik.Blazor.Components;
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_a080c6bc_3efc_4b56_b947_13372e3727e4_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+@if (_23d75c19_687e_4655_94ee_27d1f109ec88_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _23d75c19_687e_4655_94ee_27d1f109ec88_buttonVisibilityTest = !_23d75c19_687e_4655_94ee_27d1f109ec88_buttonVisibilityTest"> 
+		@if (_805c1cc9_a8bd_45d8_a6c8_16733edc032d_buttonVisibilityTest) 
+		{
+			<TelerikButton OnClick="() => _805c1cc9_a8bd_45d8_a6c8_16733edc032d_buttonVisibilityTest = !_805c1cc9_a8bd_45d8_a6c8_16733edc032d_buttonVisibilityTest"> 
+				<TelerikTabStrip> 
+					<TabStripTab> 
+						@{ var tabStrip0Data = _c08b2ccb_28c1_4fd1_8d8d_d55fe629728d_GetTabStripData(); }
+						@tabStrip0Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip1Data = _c08b2ccb_28c1_4fd1_8d8d_d55fe629728d_GetTabStripData(); }
+						@tabStrip1Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip2Data = _c08b2ccb_28c1_4fd1_8d8d_d55fe629728d_GetTabStripData(); }
+						@tabStrip2Data
+					</TabStripTab> 
+					<TabStripTab> 
+						@{ var tabStrip3Data = _c08b2ccb_28c1_4fd1_8d8d_d55fe629728d_GetTabStripData(); }
+						@tabStrip3Data
+					</TabStripTab> 
+				</TelerikTabStrip> 
+			</TelerikButton> 
+		}
+	</TelerikButton> 
+}
+<a href="#">
+	@(GetAnchor_ce928aec_5793_4646_83a8_276d8872dfaf_Text())
+</a>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+		<td>
+			<div class="@(Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class())">
+				<p>This div is a test!</p>
+			</div>
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a8d3fc4c_bf57_44ce_890c_0c39c0b032eb_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a8d3fc4c_bf57_44ce_890c_0c39c0b032eb_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+		<td>
+			Col5Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+		<td>
+			Col4Row3
+		</td>
+		<td>
+			Col5Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+@if (_8f559d5e_ee35_45e0_a26b_8334bbd5f960_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _8f559d5e_ee35_45e0_a26b_8334bbd5f960_buttonVisibilityTest = !_8f559d5e_ee35_45e0_a26b_8334bbd5f960_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+	</tr>
+</table>
+<a href="#">
+	@(GetAnchor_d86c80a4_0f8d_498f_a9af_1f61090030e5_Text())
+</a>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _805c1cc9_a8bd_45d8_a6c8_16733edc032d_buttonVisibilityTest;
+	private bool _23d75c19_687e_4655_94ee_27d1f109ec88_buttonVisibilityTest;
+	private bool _8f559d5e_ee35_45e0_a26b_8334bbd5f960_buttonVisibilityTest;
+	private void _a080c6bc_3efc_4b56_b947_13372e3727e4_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _c08b2ccb_28c1_4fd1_8d8d_d55fe629728d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_ce928aec_5793_4646_83a8_276d8872dfaf_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_7a3d6546_90b2_4e8d_8f5b_2e02cb5c53db_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _a8d3fc4c_bf57_44ce_890c_0c39c0b032eb_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_d86c80a4_0f8d_498f_a9af_1f61090030e5_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _91c4a557_fde7_40d1_bf66_fa4e5ef69e86_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

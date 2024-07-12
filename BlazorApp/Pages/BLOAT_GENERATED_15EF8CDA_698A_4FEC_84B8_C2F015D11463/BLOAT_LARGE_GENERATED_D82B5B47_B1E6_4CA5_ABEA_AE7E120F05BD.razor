@@ -1,0 +1,179 @@
+@using Telerik.Blazor.Components;
+<button>
+	<button>
+		This is a test button! 
+	</button>
+</button>
+@if (_ec0af66c_82a9_4cfb_9d99_15b4a2481a22_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ec0af66c_82a9_4cfb_9d99_15b4a2481a22_buttonVisibilityTest = !_ec0af66c_82a9_4cfb_9d99_15b4a2481a22_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col2Row3
+		</td>
+		<td>
+			Col3Row3
+		</td>
+	</tr>
+</table>
+<button>
+	This is a test button! 
+</button>
+@if (_ef474aab_4901_4c59_9742_1ae25c436196_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _ef474aab_4901_4c59_9742_1ae25c436196_buttonVisibilityTest = !_ef474aab_4901_4c59_9742_1ae25c436196_buttonVisibilityTest"> 
+		<button>
+			<table>
+				<tr>
+					<th>
+						Test Header 1
+					</th>
+				</tr>
+				<tr>
+					<td>
+						Col1Row1
+					</td>
+					<td>
+						Col1Row2
+					</td>
+				</tr>
+			</table>
+		</button>
+	</TelerikButton> 
+}
+@if (_b0ce2fab_5d01_448b_aa48_2e3b8693eb5a_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b0ce2fab_5d01_448b_aa48_2e3b8693eb5a_buttonVisibilityTest = !_b0ce2fab_5d01_448b_aa48_2e3b8693eb5a_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _517942b2_be53_4ec9_a1d1_f7b3b974b133_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _517942b2_be53_4ec9_a1d1_f7b3b974b133_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+		<td>
+			<a href="#">
+				@(GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text())
+			</a>
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _ec0af66c_82a9_4cfb_9d99_15b4a2481a22_buttonVisibilityTest;
+	private bool _ef474aab_4901_4c59_9742_1ae25c436196_buttonVisibilityTest;
+	private bool _b0ce2fab_5d01_448b_aa48_2e3b8693eb5a_buttonVisibilityTest;
+	private string _517942b2_be53_4ec9_a1d1_f7b3b974b133_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_8f73130e_1369_4566_a370_e623a30e099a_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+} 

@@ -1,0 +1,72 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _042fc850_6655_410e_8384_9a80238892e9_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_f5c56a78_52bd_4109_9b89_9fe917a2d3c3_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<button>
+	<a href="#">
+		@(GetAnchor_ddb0a629_999c_486b_bfcb_0e5960c73e8c_Text())
+	</a>
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_14f52104_29bc_4b00_b324_5e71fa706659_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_d427d67e_30f7_4c55_b884_597ed2fddd9d_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_e880f553_57b6_4a53_8683_97625fac3915_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _e880f553_57b6_4a53_8683_97625fac3915_buttonVisibilityTest = !_e880f553_57b6_4a53_8683_97625fac3915_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+@code { 
+	private bool _e880f553_57b6_4a53_8683_97625fac3915_buttonVisibilityTest;
+	private string _042fc850_6655_410e_8384_9a80238892e9_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _f5c56a78_52bd_4109_9b89_9fe917a2d3c3_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string GetAnchor_ddb0a629_999c_486b_bfcb_0e5960c73e8c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private void _14f52104_29bc_4b00_b324_5e71fa706659_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_d427d67e_30f7_4c55_b884_597ed2fddd9d_Class()
+	{
+		return "alert alert-info";
+	}
+} 

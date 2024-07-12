@@ -1,0 +1,61 @@
+@using Telerik.Blazor.Components;
+<button>
+	This is a test button! 
+</button>
+<a href="#">
+	@(GetAnchor_68abc0fb_281b_437d_b64e_092f7801473e_Text())
+</a>
+<a href="#">
+	@(GetAnchor_dccabf83_3642_4c72_bd3c_95f703e4732c_Text())
+</a>
+@if (_b03141a0_6421_4885_94a4_c9ba79222af9_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _b03141a0_6421_4885_94a4_c9ba79222af9_buttonVisibilityTest = !_b03141a0_6421_4885_94a4_c9ba79222af9_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _c84d2b5a_cbe3_4402_b1da_b322175f5e77_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_a04b5fe0_0a88_4de6_9dc6_29d637538684_Class())">
+	<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_5ae5cf78_bfba_4bd3_b093_c016d187c618_GridOnRead"> 
+		<GridColumns> 
+			<GridColumn Field="Item1" Title="TestColumn1"/> 
+			<GridColumn Field="Item2" Title="TestColumn2"/> 
+		</GridColumns> 
+	</TelerikGrid> 
+</div>
+@code { 
+	private bool _b03141a0_6421_4885_94a4_c9ba79222af9_buttonVisibilityTest;
+	private string GetAnchor_68abc0fb_281b_437d_b64e_092f7801473e_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string GetAnchor_dccabf83_3642_4c72_bd3c_95f703e4732c_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string _c84d2b5a_cbe3_4402_b1da_b322175f5e77_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private void _5ae5cf78_bfba_4bd3_b093_c016d187c618_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_a04b5fe0_0a88_4de6_9dc6_29d637538684_Class()
+	{
+		return "alert alert-info";
+	}
+} 

@@ -1,0 +1,76 @@
+@using Telerik.Blazor.Components;
+@if (_818fd8d2_d93b_4fe7_bd6e_f3ca7cfa8182_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _818fd8d2_d93b_4fe7_bd6e_f3ca7cfa8182_buttonVisibilityTest = !_818fd8d2_d93b_4fe7_bd6e_f3ca7cfa8182_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_f59aadf5_60ec_4767_8db9_161fd3d6c033_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col1Row3
+		</td>
+		<td>
+			Col1Row4
+		</td>
+		<td>
+			Col1Row5
+		</td>
+	</tr>
+</table>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _14c287c9_4f2d_4d7e_90f9_569a7931853f_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _14c287c9_4f2d_4d7e_90f9_569a7931853f_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_61ede976_7b03_42be_a44b_b4a8a53c9ef4_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _818fd8d2_d93b_4fe7_bd6e_f3ca7cfa8182_buttonVisibilityTest;
+	private void _f59aadf5_60ec_4767_8db9_161fd3d6c033_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string _14c287c9_4f2d_4d7e_90f9_569a7931853f_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_61ede976_7b03_42be_a44b_b4a8a53c9ef4_Class()
+	{
+		return "alert alert-info";
+	}
+} 

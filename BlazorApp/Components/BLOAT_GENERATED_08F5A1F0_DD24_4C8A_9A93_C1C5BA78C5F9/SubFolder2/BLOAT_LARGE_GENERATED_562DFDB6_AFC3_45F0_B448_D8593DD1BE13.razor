@@ -1,0 +1,79 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _5a0fcde1_dcfd_412c_8019_2f5c31812141_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<a href="#">
+	@(GetAnchor_ee354186_44c6_4056_bdb0_0e1f29be4714_Text())
+</a>
+<button>
+	This is a test button! 
+</button>
+<div class="@(Get_9c3c6319_6c83_4cef_b8e6_460a6786344a_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_202d0b5f_1275_4c4e_8b99_d2b171ad7d4c_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _202d0b5f_1275_4c4e_8b99_d2b171ad7d4c_buttonVisibilityTest = !_202d0b5f_1275_4c4e_8b99_d2b171ad7d4c_buttonVisibilityTest"> 
+		<TelerikTabStrip> 
+			<TabStripTab> 
+				@{ var tabStrip0Data = _3dfe00c4_6e71_4977_8e29_f841972861b2_GetTabStripData(); }
+				@tabStrip0Data
+			</TabStripTab> 
+		</TelerikTabStrip> 
+	</TelerikButton> 
+}
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _539c0e68_2564_42ac_a623_bbee802fbccf_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _539c0e68_2564_42ac_a623_bbee802fbccf_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _539c0e68_2564_42ac_a623_bbee802fbccf_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _dbe46086_3ad9_49ba_8a2a_b5d1a573fd2a_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _dbe46086_3ad9_49ba_8a2a_b5d1a573fd2a_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _202d0b5f_1275_4c4e_8b99_d2b171ad7d4c_buttonVisibilityTest;
+	private bool _c541db1e_8551_47d4_8de4_ef60fc0cf7ac_buttonVisibilityTest;
+	private string _5a0fcde1_dcfd_412c_8019_2f5c31812141_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string GetAnchor_ee354186_44c6_4056_bdb0_0e1f29be4714_Text()
+	{
+		return "This Anchor element is a Test!";
+	}
+	private string Get_9c3c6319_6c83_4cef_b8e6_460a6786344a_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _3dfe00c4_6e71_4977_8e29_f841972861b2_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _539c0e68_2564_42ac_a623_bbee802fbccf_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string _dbe46086_3ad9_49ba_8a2a_b5d1a573fd2a_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

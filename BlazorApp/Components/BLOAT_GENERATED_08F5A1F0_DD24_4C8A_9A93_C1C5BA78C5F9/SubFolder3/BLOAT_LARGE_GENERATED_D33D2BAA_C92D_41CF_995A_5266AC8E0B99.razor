@@ -1,0 +1,122 @@
+@using Telerik.Blazor.Components;
+@if (_9a33fa8e_86d6_4563_b190_a3b75da893d4_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _9a33fa8e_86d6_4563_b190_a3b75da893d4_buttonVisibilityTest = !_9a33fa8e_86d6_4563_b190_a3b75da893d4_buttonVisibilityTest"> 
+		<div class="@(Get_41c65b44_cdaf_4486_9b73_f75c77e58a5b_Class())">
+			<div class="@(Get_f19be63a_3fef_4bb0_b948_912dc6deb8f6_Class())">
+				@if (_342d735b_2807_46b0_b4d0_a86e90ee219d_buttonVisibilityTest) 
+				{
+					<TelerikButton OnClick="() => _342d735b_2807_46b0_b4d0_a86e90ee219d_buttonVisibilityTest = !_342d735b_2807_46b0_b4d0_a86e90ee219d_buttonVisibilityTest"> 
+						This is a test button! 
+					</TelerikButton> 
+				}
+			</div>
+		</div>
+	</TelerikButton> 
+}
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+<button>
+	This is a test button! 
+</button>
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+		<th>
+			Test Header 5
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col5Row1
+		</td>
+	</tr>
+</table>
+@if (_78d1db50_eb06_440b_b64f_11b76c72acb5_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _78d1db50_eb06_440b_b64f_11b76c72acb5_buttonVisibilityTest = !_78d1db50_eb06_440b_b64f_11b76c72acb5_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+		<th>
+			Test Header 2
+		</th>
+		<th>
+			Test Header 3
+		</th>
+		<th>
+			Test Header 4
+		</th>
+	</tr>
+	<tr>
+		<td>
+			Col1Row1
+		</td>
+		<td>
+			Col2Row1
+		</td>
+		<td>
+			Col3Row1
+		</td>
+		<td>
+			Col4Row1
+		</td>
+		<td>
+			Col1Row2
+		</td>
+		<td>
+			Col2Row2
+		</td>
+		<td>
+			Col3Row2
+		</td>
+		<td>
+			Col4Row2
+		</td>
+	</tr>
+</table>
+@code { 
+	private bool _342d735b_2807_46b0_b4d0_a86e90ee219d_buttonVisibilityTest;
+	private bool _9a33fa8e_86d6_4563_b190_a3b75da893d4_buttonVisibilityTest;
+	private bool _78d1db50_eb06_440b_b64f_11b76c72acb5_buttonVisibilityTest;
+	private string Get_f19be63a_3fef_4bb0_b948_912dc6deb8f6_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_41c65b44_cdaf_4486_9b73_f75c77e58a5b_Class()
+	{
+		return "alert alert-info";
+	}
+} 

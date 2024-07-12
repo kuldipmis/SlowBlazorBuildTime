@@ -1,0 +1,89 @@
+@using Telerik.Blazor.Components;
+@if (_1d58235c_9375_4ede_8b5b_fc61427a04bc_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _1d58235c_9375_4ede_8b5b_fc61427a04bc_buttonVisibilityTest = !_1d58235c_9375_4ede_8b5b_fc61427a04bc_buttonVisibilityTest"> 
+		<div class="@(Get_e64a55ab_db10_4840_858c_69dc3ea26b88_Class())">
+			@if (_917b0037_f55d_4d90_8f50_e5544437de38_buttonVisibilityTest) 
+			{
+				<TelerikButton OnClick="() => _917b0037_f55d_4d90_8f50_e5544437de38_buttonVisibilityTest = !_917b0037_f55d_4d90_8f50_e5544437de38_buttonVisibilityTest"> 
+					This is a test button! 
+				</TelerikButton> 
+			}
+		</div>
+	</TelerikButton> 
+}
+<div class="@(Get_239b8cac_4d71_45ac_ab70_42c6140f7b5d_Class())">
+	<TelerikTabStrip> 
+		<TabStripTab> 
+			@{ var tabStrip0Data = _eac38343_aceb_4f1e_affa_2a78b6eaeb63_GetTabStripData(); }
+			@tabStrip0Data
+		</TabStripTab> 
+		<TabStripTab> 
+			@{ var tabStrip1Data = _eac38343_aceb_4f1e_affa_2a78b6eaeb63_GetTabStripData(); }
+			@tabStrip1Data
+		</TabStripTab> 
+	</TelerikTabStrip> 
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip2Data = _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData(); }
+		@tabStrip2Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip3Data = _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData(); }
+		@tabStrip3Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip4Data = _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData(); }
+		@tabStrip4Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+<div class="@(Get_ee0a7c8b_4b71_4db9_8bfe_208af0946b02_Class())">
+	<p>This div is a test!</p>
+</div>
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _1f5bf710_eae6_4564_8521_14f37fd5e48d_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@code { 
+	private bool _917b0037_f55d_4d90_8f50_e5544437de38_buttonVisibilityTest;
+	private bool _1d58235c_9375_4ede_8b5b_fc61427a04bc_buttonVisibilityTest;
+	private string Get_e64a55ab_db10_4840_858c_69dc3ea26b88_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _eac38343_aceb_4f1e_affa_2a78b6eaeb63_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_239b8cac_4d71_45ac_ab70_42c6140f7b5d_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _a2791d67_5cba_4062_adf4_a72c35f28aef_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_ee0a7c8b_4b71_4db9_8bfe_208af0946b02_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_0d149e2f_ff31_4f82_b3c9_a21850a23a36_Class()
+	{
+		return "alert alert-info";
+	}
+	private string _1f5bf710_eae6_4564_8521_14f37fd5e48d_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+} 

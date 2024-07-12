@@ -1,0 +1,115 @@
+@using Telerik.Blazor.Components;
+@if (_08501419_8311_4563_bca6_93cb02fe7066_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _08501419_8311_4563_bca6_93cb02fe7066_buttonVisibilityTest = !_08501419_8311_4563_bca6_93cb02fe7066_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_73204156_88a9_4c82_9a05_a99735116007_GridOnRead"> 
+	<GridColumns> 
+		<GridColumn Field="Item1" Title="TestColumn1"/> 
+		<GridColumn Field="Item2" Title="TestColumn2"/> 
+	</GridColumns> 
+</TelerikGrid> 
+<div class="@(Get_91c2fb5d_8d4f_456c_9b9c_741ee335f29a_Class())">
+	<p>This div is a test!</p>
+</div>
+<div class="@(Get_b8389cd7_4397_44ab_9f70_f830d0b6ec6a_Class())">
+	<p>This div is a test!</p>
+</div>
+@if (_81beffbd_3e0a_4524_9d8b_1fd1f8a71560_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _81beffbd_3e0a_4524_9d8b_1fd1f8a71560_buttonVisibilityTest = !_81beffbd_3e0a_4524_9d8b_1fd1f8a71560_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<table>
+	<tr>
+		<th>
+			Test Header 1
+		</th>
+	</tr>
+	<tr>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+		<td>
+			<TelerikGrid Pageable="@true" Sortable="@true" TItem="Tuple<string, string>" OnRead="@_ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead"> 
+				<GridColumns> 
+					<GridColumn Field="Item1" Title="TestColumn1"/> 
+					<GridColumn Field="Item2" Title="TestColumn2"/> 
+				</GridColumns> 
+			</TelerikGrid> 
+		</td>
+	</tr>
+</table>
+<button>
+	<button>
+		This is a test button! 
+	</button>
+</button>
+@code { 
+	private bool _08501419_8311_4563_bca6_93cb02fe7066_buttonVisibilityTest;
+	private bool _81beffbd_3e0a_4524_9d8b_1fd1f8a71560_buttonVisibilityTest;
+	private void _73204156_88a9_4c82_9a05_a99735116007_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+	private string Get_91c2fb5d_8d4f_456c_9b9c_741ee335f29a_Class()
+	{
+		return "alert alert-info";
+	}
+	private string Get_b8389cd7_4397_44ab_9f70_f830d0b6ec6a_Class()
+	{
+		return "alert alert-info";
+	}
+	private void _ac9da3c1_420c_4c15_9620_d167bfeaecb9_GridOnRead(GridReadEventArgs args)
+	{
+		List<Tuple<string, string>> data = new()
+		{
+			new Tuple<string, string>("TestVal1", "TestVal2"),
+			new Tuple<string, string>("TestVal3", "TestVal4"),
+			new Tuple<string, string>("TestVal5", "TestVal6"),
+			new Tuple<string, string>("TestVal7", "TestVal8")
+		};
+		args.Data = data;
+		args.Total = data.Count;
+	}
+} 

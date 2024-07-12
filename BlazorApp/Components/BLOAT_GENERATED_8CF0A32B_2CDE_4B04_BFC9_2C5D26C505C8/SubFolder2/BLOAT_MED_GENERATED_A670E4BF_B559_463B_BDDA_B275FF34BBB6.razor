@@ -1,0 +1,31 @@
+@using Telerik.Blazor.Components;
+<TelerikTabStrip> 
+	<TabStripTab> 
+		@{ var tabStrip0Data = _d30198d0_efa0_45b8_aa03_1280a0d0b95f_GetTabStripData(); }
+		@tabStrip0Data
+	</TabStripTab> 
+	<TabStripTab> 
+		@{ var tabStrip1Data = _d30198d0_efa0_45b8_aa03_1280a0d0b95f_GetTabStripData(); }
+		@tabStrip1Data
+	</TabStripTab> 
+</TelerikTabStrip> 
+@if (_2d171c08_64be_4da2_9499_68aa47f400fb_buttonVisibilityTest) 
+{
+	<TelerikButton OnClick="() => _2d171c08_64be_4da2_9499_68aa47f400fb_buttonVisibilityTest = !_2d171c08_64be_4da2_9499_68aa47f400fb_buttonVisibilityTest"> 
+		This is a test button! 
+	</TelerikButton> 
+}
+<div class="@(Get_7121c000_e5f5_4a31_961c_56a9488ae8b9_Class())">
+	<p>This div is a test!</p>
+</div>
+@code { 
+	private bool _2d171c08_64be_4da2_9499_68aa47f400fb_buttonVisibilityTest;
+	private string _d30198d0_efa0_45b8_aa03_1280a0d0b95f_GetTabStripData()
+	{
+		return "Tab strip content!";
+	}
+	private string Get_7121c000_e5f5_4a31_961c_56a9488ae8b9_Class()
+	{
+		return "alert alert-info";
+	}
+} 
